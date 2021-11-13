@@ -599,7 +599,7 @@ header {
     line-height: 28px;
 }
 
-.button--disable-table {
+.button--table {
     padding: 7px 7px 7px 10px;
     border: 1px solid var(--neutral--300);
     border-radius: 6px;
@@ -609,10 +609,20 @@ header {
     color: var(--text-color-secondary);
     display: flex;
     align-items: center;
+    transition: all .3s;
 }
 
-.button--disable-table svg{
-    margin-right: 8px;
+.button--table svg path {
+    fill: var(--text-color-secondary);
+}
+
+.button--table:hover {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.button--table:hover svg path {
+    fill: var(--main-color);
 }
 
 .prev--button-table {
@@ -625,20 +635,4 @@ header {
     border: 1px solid var(--neutral--300);
     border-radius: 6px;
     margin-right: 10px;
-}
-
-.button--active-table {
-    padding: 7px 7px 7px 10px;
-    border: 1px solid var(--neutral--300);
-    border-radius: 6px;
-    outline: none;
-    background: none;
-    font-size: 14px;
-    color: var(--main-color);
-    display: flex;
-    align-items: center;
-}
-
-.button--active-table svg {
-    margin-left: 8px;
 }
