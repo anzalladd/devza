@@ -92,6 +92,14 @@ p {
     line-height: 100px;
 }
 
+.pl-100 {
+    padding-left: 100px;
+}
+
+.pr-100 {
+    padding-right: 100px;
+}
+
 .button-main-small {
     font-weight: bold;
     font-size: 16px;
@@ -433,4 +441,92 @@ header {
 .images-grid__item:nth-child(9){
     grid-column: 4/6;
     grid-row: 2/4;
+}
+
+.founding {
+    margin-top: -30px;
+}
+
+.founding__card-group {
+    margin-top: 80px;
+}
+
+.founding--card {
+    transform: skew(0deg, -5deg);
+    padding: 10px;
+    box-shadow: 0px 8px 28px rgba(41, 41, 62, 0.08);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.founding--card img {
+    transform: skew(0deg, 5deg);
+}
+
+.founding--card:hover{
+    box-shadow: 20px 16px white, 20px 16px 0 2px #2f55d4, 20px 16px 50px 2px rgb(141 168 255 / 18%);
+    background-color: var(--main-color);
+}
+
+.founding--card:hover .founding--card__details {
+    background-color: white;
+    margin-top: -100px;
+    padding-bottom: 80px;
+}
+
+.founding--card:hover .founding--card__details h3 {
+    color: var(--main-color);
+}
+
+.founding--card:hover .founding--card__details span {
+    color: var(--text-color-primary);
+}
+
+.founding--card:hover .founding--card__details h4 {
+    color: var(--text-color-secondary);
+}
+
+.founding--card__details {
+    padding: 15px 30px;
+    background: #2F55D4;
+    backdrop-filter: blur(18px);
+    border-radius: 15.0923px;
+    color: white;
+    align-self: flex-start;
+    width: 100%;
+    position: relative;
+    margin-top: -20px;
+    transition: all .3s;
+    position: relative;
+}
+
+.founding--card__details__icon {
+    position: absolute;
+    bottom: -100px;
+    transition: all .3s;
+}
+
+.founding--card__details__icon img {
+    margin-right: 18px;
+}
+
+.founding--card:hover .founding--card__details__icon {
+    display: flex;
+    align-items: center;
+    bottom: 30px;
+}
+
+.founding--details__card {
+    padding: 50px;
+    background-color: var(--text-color-grey);
+    border-radius: 16px;
+    width: 100%;
+}
+
+.founding--details__card p {
+    margin-top: 10px;
 }
