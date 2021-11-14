@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -610,7 +611,6 @@
                                 </linearGradient>
                             </defs>
                         </svg>
-
                     </div>
                 </div>
                 <div class="main-table">
@@ -723,10 +723,47 @@
                         </div>
                         <button class="button--table">
                             Next
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.29289 7.08406C7.90237 6.69354 7.90237 6.06037 8.29289 5.66985C8.68342 5.27932 9.31658 5.27932 9.70711 5.66985L8.29289 7.08406ZM15 12.377L15.7071 11.6698L16.4142 12.377L15.7071 13.0841L15 12.377ZM9.70711 19.0841C9.31658 19.4746 8.68342 19.4746 8.29289 19.0841C7.90237 18.6935 7.90237 18.0604 8.29289 17.6698L9.70711 19.0841ZM9.70711 5.66985L15.7071 11.6698L14.2929 13.0841L8.29289 7.08406L9.70711 5.66985ZM15.7071 13.0841L9.70711 19.0841L8.29289 17.6698L14.2929 11.6698L15.7071 13.0841Z" fill="#2F55D4"/>
-                                </svg>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.29289 7.08406C7.90237 6.69354 7.90237 6.06037 8.29289 5.66985C8.68342 5.27932 9.31658 5.27932 9.70711 5.66985L8.29289 7.08406ZM15 12.377L15.7071 11.6698L16.4142 12.377L15.7071 13.0841L15 12.377ZM9.70711 19.0841C9.31658 19.4746 8.68342 19.4746 8.29289 19.0841C7.90237 18.6935 7.90237 18.0604 8.29289 17.6698L9.70711 19.0841ZM9.70711 5.66985L15.7071 11.6698L14.2929 13.0841L8.29289 7.08406L9.70711 5.66985ZM15.7071 13.0841L9.70711 19.0841L8.29289 17.6698L14.2929 11.6698L15.7071 13.0841Z"
+                                    fill="#2F55D4" />
+                            </svg>
                         </button>
+                    </div>
+                </div>
+                <svg width="236" height="167" viewBox="0 0 236 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M221.686 136.383L234.933 154.042L216.355 165.229" stroke="#2F55D4" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M13.8878 1.37646C-22.5868 57.0849 23.9393 98.6332 83.7393 93.2008C132.134 88.8045 116.737 50.5417 75.9177 75.8102C8.13563 117.77 162.329 153.733 234.249 153.733"
+                        stroke="url(#paint0_linear_895_4901)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_895_4901" x1="162.301" y1="276.928" x2="139.295" y2="-23.0069"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2F55D4" />
+                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="our-team">
+                    <h1 class="text-h1 fw-bold text-color-primary text-center">
+                        <h1 class="text-h1 fw-bold text-color-primary text-center">
+                            Our Team is <span class="main-color">Situated Globally</span>
+                        </h1>
+                        <div class="our-team__devza">
+                            <img src="./assets/images/devza_text.svg" alt="devza">
+                        </div>
+                    </h1>
+                    <div class="wrapper-map">
+                        <div class="wrapper-map__switch" id="switch-map">
+                            <input id="dark-v10" type="radio" name="rtoggle" value="dark" checked="checked">
+                            <label for="dark-v10">Dark</label>
+                            <input id="light-v10" type="radio" name="rtoggle" value="light">
+                            <label for="light-v10">Light</label>
+                        </div>
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
@@ -739,6 +776,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 </script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
 <script src="./assets/js/script.js"></script>
 
 </html>
