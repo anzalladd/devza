@@ -102,6 +102,14 @@ p {
     line-height: 100px;
 }
 
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
 .pl-100 {
     padding-left: 100px;
 }
@@ -779,6 +787,10 @@ a.mapboxgl-ctrl-logo{
     background: none;
 }
 
+.mapboxgl-ctrl-group:not(:empty){
+    box-shadow: unset !important;
+}
+
 .mapboxgl-ctrl-group button {
     width: 50px;
     height: 50px;
@@ -803,7 +815,48 @@ a.mapboxgl-ctrl-logo{
     background-image: url(./assets/images/Remove.svg) !important;
 }
 
+.our-team__nationality {
+    margin-top: 60px;
+}
 
+.our-team__nationality__flag h3{
+    margin-left: 10px;
+}
+
+.our-team__nationality__flag {
+    margin-bottom: 10px;
+}
+
+.our-team__nationality .accordion-button {
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.our-team__nationality .accordion-button:not(.collapsed) {
+    color: var(--text-color-secondary) !important;
+}
+
+.our-team__nationality .accordion-button::after{
+    background-image: url('./assets/images/maps-location/Expand_down.svg');
+}
+
+.our-team__nationality .accordion-item {
+    border: none !important;
+}
+
+.our-team__nationality .accordion-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.our-team__nationality .accordion {
+    margin-top: 30px;
+}
 
 @keyframes arrow_first_animation {
     0% {
