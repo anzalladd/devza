@@ -13,6 +13,13 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
+    $('.blog__post').owlCarousel({
+        items: 3,
+        margin: 30
+    })
+})
+
+$(document).ready(function () {
     const accessToken = 'pk.eyJ1IjoiYW56YWxsYWRkIiwiYSI6ImNrdnkxbW02cDB5N2Mydm8xNTFqN3ByY24ifQ.35219SExEhssb02yrVSBOg';
     // Mapbox Configuration
     const mapboxConfig = {
