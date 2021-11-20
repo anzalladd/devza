@@ -14,8 +14,17 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.blog__post').owlCarousel({
-        items: 3,
-        margin: 30
+        responsive: {
+            0: {
+                items: 1,
+                margin: 10
+            },
+            992: {
+                items: 3,
+                margin: 30
+            }
+        },
+        stagePadding: 40,
     })
 })
 
@@ -96,3 +105,19 @@ $(document).ready(function () {
     });
 
 })
+
+
+$("#menuNavbar").click(function () {
+    if ($('.wrapper-nav').hasClass('active-nav-mobile')) {
+        $('.wrapper-nav').removeClass('active-nav-mobile')
+    } else {
+        $('.wrapper-nav').addClass('active-nav-mobile')
+    }
+});
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".wrapper-nav");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});

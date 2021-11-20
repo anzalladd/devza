@@ -19,29 +19,42 @@
 </head>
 
 <body>
+    <div class="wrapper-nav">
+        <nav class="container main-nav">
+            <div class="nav__logo">
+                <img src="./assets/images/Black.png" alt="logo">
+            </div>
+            <div class="main-nav__item d-flex">
+                <p class="text-color-primary fw-semi-bold text-small-1">HOME</p>
+                <p class="text-color-primary fw-semi-bold text-small-1">PRODUCTS</p>
+                <p class="text-color-primary fw-semi-bold text-small-1">BLOG</p>
+                <p class="main-color fw-semi-bold text-small-1">CARRERS</p>
+            </div>
+            <div class="main-nav__button">
+                <button class="button-main-small">Contact</button>
+            </div>
+            <div class="main-nav__bar">
+                <img src="./assets/images/Menu.svg" alt="Menu" id="menuNavbar">
+            </div>
+        </nav>
+        <div class="nav-items">
+            <div class="container px-0">
+                <p class="text-color-primary fw-semi-bold text-small-1">HOME</p>
+                <p class="text-color-primary fw-semi-bold text-small-1">PRODUCTS</p>
+                <p class="text-color-primary fw-semi-bold text-small-1">BLOG</p>
+                <p class="main-color fw-semi-bold text-small-1">CARRERS</p>
+                <button class="button-main-small">Contact</button>
+            </div>
+        </div>
+    </div>
     <!-- Header Section -->
     <section class="header-section">
         <img src="./assets/images/bg_header.png" alt="bg" class="bg-header">
         <div class="container">
-            <!-- Navbar -->
-            <nav class="main-nav">
-                <div class="nav__logo">
-                    <img src="./assets/images/Black.png" alt="">
-                </div>
-                <div class="main-nav__item d-flex">
-                    <p class="text-color-primary fw-semi-bold text-small-1">HOME</p>
-                    <p class="text-color-primary fw-semi-bold text-small-1">PRODUCTS</p>
-                    <p class="text-color-primary fw-semi-bold text-small-1">BLOG</p>
-                    <p class="main-color fw-semi-bold text-small-1">CARRERS</p>
-                </div>
-                <div class="main-nav__button">
-                    <button class="button-main-small">Contact</button>
-                </div>
-            </nav>
             <!-- Header -->
             <header class="header">
                 <div class="row">
-                    <div class="col-12 col-md-6 header__content">
+                    <div class="col-12 col-lg-6 header__content">
                         <h1 class="text-header fw-bold">
                             <div class="text-color-secondary">Hi.!</div>
                             <div class="text-color-primary">We Are</div>
@@ -51,7 +64,7 @@
                             </div>
                         </h1>
                     </div>
-                    <div class="col-12 col-md-6 header__video">
+                    <div class="col-12 col-lg-6 header__video">
                         <div class="header__video__wrapper">
                             <img src="./assets/images/icon_play.svg" alt="icon_play" class="icon--play">
                             <img src="./assets/images/stamp_work_culture.png" alt="stamp_work_culture"
@@ -70,23 +83,41 @@
     <section class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <svg width="557" height="334" viewBox="0 0 557 334" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M504.232 214.358L526.093 217.431L520.913 238.488" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M41.2783 1.76157C41.2783 1.76157 14.8771 45.7196 139.702 155.536C249.158 251.832 129.348 311.186 98.4011 246.799C67.4541 182.411 225.212 128.786 323.093 237.051C403.881 326.408 524.964 218.032 524.964 218.032"
-                            stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round" />
-                        <defs>
-                            <linearGradient id="paint0_linear_895:4913" x1="448.583" y1="544.863" x2="160.948"
-                                y2="-81.5375" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#2F55D4" />
-                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                <div class="col-12 col-lg-6">
+                    <div class="responsive--arrow justify-end-mobile">
+                        <svg width="557" height="334" viewBox="0 0 557 334" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M504.232 214.358L526.093 217.431L520.913 238.488" stroke="#2F55D4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M41.2783 1.76157C41.2783 1.76157 14.8771 45.7196 139.702 155.536C249.158 251.832 129.348 311.186 98.4011 246.799C67.4541 182.411 225.212 128.786 323.093 237.051C403.881 326.408 524.964 218.032 524.964 218.032"
+                                stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895:4913" x1="448.583" y1="544.863" x2="160.948"
+                                    y2="-81.5375" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg width="143" height="143" viewBox="0 0 143 143" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.7624 115.307L26.599 119.224L30.8416 122.902" stroke="#2F55D4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M96.8802 1.16193C96.8802 1.16193 109.033 6.51121 99.0507 48.3882C90.2977 85.1092 124.503 79.7536 121.424 61.5133C118.344 43.2731 76.9714 55.5117 72.4547 93.0336C68.7268 124.003 26.9259 119.183 26.9259 119.183"
+                                stroke="url(#paint0_linear_895_6801)" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895_6801" x1="91.9238" y1="176.877" x2="59.126"
+                                    y2="1.43338" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 about--end">
+                <div class="col-12 col-lg-6 about--end">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         Who <span class="main-color">Are We</span> ?
                     </h1>
@@ -101,7 +132,7 @@
             </div>
             <img src="./assets/images/dot.png" alt="dot" class="dot-first">
             <div class="row our-story">
-                <div class="col-12 col-md-6 about--end">
+                <div class="col-12 col-lg-6 about--end">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         Want to Know <span class="main-color">Our Story</span> ?
                     </h1>
@@ -112,42 +143,78 @@
                         15.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 about-1__content">
-                    <svg width="551" height="317" viewBox="0 0 551 317" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M48.7433 197.486L26.7887 199.796L31.234 221.021" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M518.806 1.11199C518.806 1.11199 543.663 45.9613 415.095 151.372C302.358 243.804 420.032 307.288 453.198 244.015C486.365 180.742 330.567 121.665 228.981 226.461C145.136 312.956 27.8936 200.436 27.8936 200.436"
-                            stroke="url(#paint0_linear_895:4910)" stroke-width="2" stroke-linecap="round" />
-                        <defs>
-                            <linearGradient id="paint0_linear_895:4910" x1="92.8656" y1="529.725" x2="402.104"
-                                y2="-86.2972" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#2F55D4" />
-                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                <div class="col-12 col-lg-6 about-1__content">
+                    <div class="responsive--arrow" style="padding: 14px 0;">
+                        <svg width="551" height="317" viewBox="0 0 551 317" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M48.7433 197.486L26.7887 199.796L31.234 221.021" stroke="#2F55D4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M518.806 1.11199C518.806 1.11199 543.663 45.9613 415.095 151.372C302.358 243.804 420.032 307.288 453.198 244.015C486.365 180.742 330.567 121.665 228.981 226.461C145.136 312.956 27.8936 200.436 27.8936 200.436"
+                                stroke="url(#paint0_linear_895:4910)" stroke-width="2" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895:4910" x1="92.8656" y1="529.725" x2="402.104"
+                                    y2="-86.2972" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg width="142" height="83" viewBox="0 0 142 83" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M126.562 68.0184L131.413 77.0324L122.121 80.8751" stroke="#2F55D4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M14.4676 0.65886C-6.99283 22.8577 40.1024 33.4477 67.8115 36.1773C90.2358 38.3864 86.5526 19.6194 65.7624 27.576C31.2392 40.7884 98.3384 70.5863 131.095 76.8448"
+                                stroke="url(#paint0_linear_895_6804)" stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895_6804" x1="109.382" y1="125.731" x2="59.1984"
+                                    y2="-23.4608" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
             </div>
             <img src="./assets/images/dot.png" alt="dot" class="dot-second">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <svg width="463" height="306" viewBox="0 0 463 306" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M429.788 233.236L451.841 234.243L448.66 255.694" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M2.48581 41.5581C-8.8959 116.982 85.5816 133.274 125.767 154.349C175.999 180.693 161.984 244.313 92.9108 225.796C23.8375 207.279 154.194 94.3746 211.696 186.324C269.198 278.274 369.12 303.388 450.069 235.887"
-                            stroke="url(#paint0_linear_895:4883)" stroke-width="2" stroke-linecap="round" />
-                        <defs>
-                            <linearGradient id="paint0_linear_895:4883" x1="226.564" y1="757.498" x2="-120.649"
-                                y2="130.166" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#2F55D4" />
-                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                <div class="col-12 col-lg-6">
+                    <div class="responsive--arrow mirrored--arrow" style="padding: 14px 0;">
+                        <svg width="463" height="306" viewBox="0 0 463 306" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M429.788 233.236L451.841 234.243L448.66 255.694" stroke="#2F55D4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M2.48581 41.5581C-8.8959 116.982 85.5816 133.274 125.767 154.349C175.999 180.693 161.984 244.313 92.9108 225.796C23.8375 207.279 154.194 94.3746 211.696 186.324C269.198 278.274 369.12 303.388 450.069 235.887"
+                                stroke="url(#paint0_linear_895:4883)" stroke-width="2" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895:4883" x1="226.564" y1="757.498" x2="-120.649"
+                                    y2="130.166" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg width="142" height="83" viewBox="0 0 142 83" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M126.562 68.0184L131.413 77.0324L122.121 80.8751" stroke="#2F55D4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M14.4676 0.65886C-6.99283 22.8577 40.1024 33.4477 67.8115 36.1773C90.2358 38.3864 86.5526 19.6194 65.7624 27.576C31.2392 40.7884 98.3384 70.5863 131.095 76.8448"
+                                stroke="url(#paint0_linear_895_6804)" stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895_6804" x1="109.382" y1="125.731" x2="59.1984"
+                                    y2="-23.4608" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 about--end">
+                <div class="col-12 col-lg-6 about--end">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         We're Now <span class="main-color">Building Botza</span> ?
                     </h1>
@@ -158,7 +225,7 @@
                 </div>
             </div>
             <div class="row row-carousel">
-                <div class="col-12 col-md-7 wrapper-carousel d-flex align-items-center justify-space-between">
+                <div class="col-12 col-lg-7 wrapper-carousel d-flex align-items-center justify-space-between">
                     <div class="btn--carousel prev-carousel--btn">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -184,8 +251,26 @@
                                 fill="white" />
                         </svg>
                     </div>
+                    <div class="btn--carousel-only-mobile">
+                        <div class="prev-carousel--btn">
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.70662 1.70711C9.09714 1.31658 9.09714 0.683417 8.70662 0.292893C8.31609 -0.0976311 7.68293 -0.0976311 7.29241 0.292893L8.70662 1.70711ZM1.99951 7L1.2924 6.29289L0.585298 7L1.2924 7.70711L1.99951 7ZM7.29241 13.7071C7.68293 14.0976 8.31609 14.0976 8.70662 13.7071C9.09714 13.3166 9.09714 12.6834 8.70662 12.2929L7.29241 13.7071ZM7.29241 0.292893L1.2924 6.29289L2.70662 7.70711L8.70662 1.70711L7.29241 0.292893ZM1.2924 7.70711L7.29241 13.7071L8.70662 12.2929L2.70662 6.29289L1.2924 7.70711Z"
+                                    fill="#2F55D4" />
+                            </svg>
+                        </div>
+                        <div class="next-carousel--btn">
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.292405 1.70711C-0.0981193 1.31658 -0.0981193 0.683417 0.292405 0.292893C0.682929 -0.0976311 1.31609 -0.0976311 1.70662 0.292893L0.292405 1.70711ZM6.99951 7L7.70662 6.29289L8.41373 7L7.70662 7.70711L6.99951 7ZM1.70662 13.7071C1.31609 14.0976 0.682929 14.0976 0.292405 13.7071C-0.0981193 13.3166 -0.0981193 12.6834 0.292405 12.2929L1.70662 13.7071ZM1.70662 0.292893L7.70662 6.29289L6.2924 7.70711L0.292405 1.70711L1.70662 0.292893ZM7.70662 7.70711L1.70662 13.7071L0.292405 12.2929L6.2924 6.29289L7.70662 7.70711Z"
+                                    fill="#2F55D4" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-5 main-card">
+                <div class="col-12 col-lg-5 main-card">
                     <div class="d-flex align-items-center">
                         <img src="./assets/images/botza.png" alt="">
                         <div class="main-card__text">
@@ -196,8 +281,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 about--end">
+            <div class="row how-botza">
+                <div class="col-12 col-lg-6 about--end">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         How <span class="main-color">Botza Came</span> to Being ?
                     </h1>
@@ -206,43 +291,78 @@
                         the Link Snappy for first and continue building other internal tool products.
                     </p>
                 </div>
-                <div class="col-12 col-md-6 about-1__content">
-                    <svg width="463" height="306" viewBox="0 0 463 306" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M33.0892 233.237L11.0363 234.244L14.2169 255.695" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M460.391 41.5586C471.773 116.982 377.295 133.274 337.11 154.349C286.878 180.693 300.893 244.314 369.966 225.796C439.039 207.279 308.683 94.375 251.181 186.325C193.679 278.275 93.7571 303.389 12.8078 235.887"
-                            stroke="url(#paint0_linear_895:4886)" stroke-width="2" stroke-linecap="round" />
-                        <defs>
-                            <linearGradient id="paint0_linear_895:4886" x1="236.313" y1="757.498" x2="583.526"
-                                y2="130.166" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#2F55D4" />
-                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                <div class="col-12 col-lg-6 about-1__content">
+                    <div class="responsive--arrow justify-end-mobile">
+                        <svg width="463" height="306" viewBox="0 0 463 306" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.0892 233.237L11.0363 234.244L14.2169 255.695" stroke="#2F55D4" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M460.391 41.5586C471.773 116.982 377.295 133.274 337.11 154.349C286.878 180.693 300.893 244.314 369.966 225.796C439.039 207.279 308.683 94.375 251.181 186.325C193.679 278.275 93.7571 303.389 12.8078 235.887"
+                                stroke="url(#paint0_linear_895:4886)" stroke-width="2" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895:4886" x1="236.313" y1="757.498" x2="583.526"
+                                    y2="130.166" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg width="136" height="61" viewBox="0 0 136 61" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="margin: 20px 0 35px 0;">
+                            <path d="M7.78081 45.2147L1.21345 53.0668L9.54109 58.7025" stroke="#2F55D4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M131.145 1.81502C147.694 27.8816 99.4305 28.7681 71.7395 25.8602C49.3298 23.507 56.7178 5.86658 75.4792 17.8479C106.633 37.7436 34.9072 53.4147 1.56171 52.9468"
+                                stroke="url(#paint0_linear_895_6834)" stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_895_6834" x1="12.9824" y1="105.204" x2="92.1891"
+                                    y2="-30.8205" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2F55D4" />
+                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
                 </div>
             </div>
             <img src="./assets/images/dot.png" alt="dot" class="dot-first">
-            <svg width="269" height="218" viewBox="0 0 269 218" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="botza-came-down">
-                <path d="M222.297 184.933L230.917 205.257L210.197 211.656" stroke="#2F55D4" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M52.9855 3.99002C4.20409 49.3132 39.3954 100.816 98.7508 109.898C146.786 117.248 141.024 76.4077 95.3327 91.1382C19.4599 115.599 160.511 187.527 230.328 204.792"
-                    stroke="url(#paint0_linear_895:4907)" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <defs>
-                    <linearGradient id="paint0_linear_895:4907" x1="130.909" y1="307.112" x2="180.579" y2="10.4254"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#2F55D4" />
-                        <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                    </linearGradient>
-                </defs>
-            </svg>
-
+            <div class="responsive--arrow">
+                <svg width="269" height="218" viewBox="0 0 269 218" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="botza-came-down">
+                    <path d="M222.297 184.933L230.917 205.257L210.197 211.656" stroke="#2F55D4" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M52.9855 3.99002C4.20409 49.3132 39.3954 100.816 98.7508 109.898C146.786 117.248 141.024 76.4077 95.3327 91.1382C19.4599 115.599 160.511 187.527 230.328 204.792"
+                        stroke="url(#paint0_linear_895:4907)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_895:4907" x1="130.909" y1="307.112" x2="180.579" y2="10.4254"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2F55D4" />
+                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <svg width="135" height="86" viewBox="0 0 135 86" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="margin: 14px 0 35px 0;">
+                    <path d="M117.058 71.7658L120.912 80.5098L111.983 83.405" stroke="#2F55D4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M17.6763 0.865427C-3.92181 19.9514 39.1298 33.2578 64.7164 37.8285C85.423 41.5275 83.3706 23.7927 63.4398 29.6738C30.3437 39.4397 90.6038 72.0871 120.629 80.3117"
+                        stroke="url(#paint0_linear_895_6837)" stroke-linecap="round" stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_895_6837" x1="96.84" y1="124.215" x2="61.0711" y2="-18.3029"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2F55D4" />
+                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
             <div class="row align-items-center justify-content-between position-relative">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-lg-5">
                     <div class="main-card">
                         <div class="d-flex align-items-center">
                             <img src="./assets/images/link_snappy.png" alt="">
@@ -254,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         What is <span class="main-color">Link Snappy</span> ?
                     </h1>
@@ -265,22 +385,38 @@
                 </div>
             </div>
             <div class="position-relative">
-                <svg width="237" height="166" viewBox="0 0 237 166" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="link-snappy">
-                    <path d="M15.1933 136.006L1.94637 153.666L20.5237 164.852" stroke="#2F55D4" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M222.991 1C259.466 56.7085 212.94 98.2567 153.14 92.8243C104.745 88.428 120.142 50.1652 160.961 75.4337C228.743 117.393 74.5494 153.357 2.62988 153.357"
-                        stroke="url(#paint0_linear_895:4904)" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <defs>
-                        <linearGradient id="paint0_linear_895:4904" x1="74.5775" y1="276.552" x2="97.5838" y2="-23.3833"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2F55D4" />
-                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
+                <div class="responsive--arrow justify-end-mobile">
+                    <svg width="237" height="166" viewBox="0 0 237 166" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="link-snappy">
+                        <path d="M15.1933 136.006L1.94637 153.666L20.5237 164.852" stroke="#2F55D4" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M222.991 1C259.466 56.7085 212.94 98.2567 153.14 92.8243C104.745 88.428 120.142 50.1652 160.961 75.4337C228.743 117.393 74.5494 153.357 2.62988 153.357"
+                            stroke="url(#paint0_linear_895:4904)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_895:4904" x1="74.5775" y1="276.552" x2="97.5838"
+                                y2="-23.3833" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg width="144" height="92" viewBox="0 0 144 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.1699 76.5926L14.0171 85.9489L23.5741 89.0751" stroke="#2F55D4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M124.826 0.918326C147.91 21.424 101.754 35.5585 74.3325 40.3837C52.1405 44.2886 54.3885 25.2961 75.7227 31.6516C111.149 42.2052 46.5056 77.0106 14.319 85.7376"
+                            stroke="url(#paint0_linear_898_7135)" stroke-linecap="round" stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_898_7135" x1="39.6802" y1="132.834" x2="78.3935"
+                                y2="-19.7362" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
             </div>
             <div class="our-internal">
                 <h1 class="text-h1 fw-bold text-color-primary">
@@ -291,71 +427,88 @@
             </div>
             <div class="feature">
                 <div class="feature__item row align-items-center">
-                    <div class="feature__item__text col-12 col-md-6">
+                    <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 warning--label fw-bold">Under Construction</div>
                         <h3 class="text-h3 fw-bold text-color-primary">Over 70 gigabit servers and a VPN network...</h3>
                         <p class="text-body-2 text-color-secondary">DigitalDart defeats content restrictions and
                             censorship to deliver unlimited access to video, music, social media, and more, from
                             anywhere.</p>
                     </div>
-                    <div class="feature__item__picture col-12 col-md-6 d-flex justify-content-end">
+                    <div class="feature__item__picture col-12 col-lg-6 d-flex justify-content-end">
                         <img src="./assets/images/Logo DD.png" alt="DD">
                     </div>
                 </div>
                 <div class="feature__item row align-items-center">
-                    <div class="feature__item__text col-12 col-md-6">
+                    <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 success--label fw-bold">Releasing Soon</div>
                         <h3 class="text-h3 fw-bold text-color-primary">A tool that enhanced our productivity...</h3>
                         <p class="text-body-2 text-color-secondary">Botza is your personal magic wand, that increases
                             functionality of Slack and MS Teams by 10x.</p>
                     </div>
-                    <div class="feature__item__picture col-12 col-md-6 d-flex justify-content-end">
+                    <div class="feature__item__picture col-12 col-lg-6 d-flex justify-content-end">
                         <img src="./assets/images/Logo Botza.png" alt="Botza">
                     </div>
                 </div>
                 <div class="feature__item row align-items-center">
-                    <div class="feature__item__text col-12 col-md-6">
+                    <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 warning--label fw-bold">Under Construction</div>
                         <h3 class="text-h3 fw-bold text-color-primary">Easy Use Geolocation DB & API...</h3>
                         <p class="text-body-2 text-color-secondary">IP Mates offers easy to integrate real time
                             geolocation DB API service which returns the location of an IP address in different formats.
                         </p>
                     </div>
-                    <div class="feature__item__picture col-12 col-md-6 d-flex justify-content-end">
+                    <div class="feature__item__picture col-12 col-lg-6 d-flex justify-content-end">
                         <img src="./assets/images/Logo IP Mates.png" alt="Ip Mates">
                     </div>
                 </div>
                 <div class="feature__item row align-items-center">
-                    <div class="feature__item__text col-12 col-md-6">
+                    <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 warning--label fw-bold">Under Construction</div>
                         <h3 class="text-h3 fw-bold text-color-primary">Add Trustpilot Reviews to your website...</h3>
                         <p class="text-body-2 text-color-secondary">Embed Reviews by using some advanced tools and
                             discover interesting features from us.</p>
                     </div>
-                    <div class="feature__item__picture col-12 col-md-6 d-flex justify-content-end">
+                    <div class="feature__item__picture col-12 col-lg-6 d-flex justify-content-end">
                         <img src="./assets/images/Logo TW.png" alt="TW">
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <svg width="301" height="162" viewBox="0 0 301 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M26.9336 130.691L15.1949 149.387L34.635 158.996" stroke="#2F55D4" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M277.852 1.91972C320.827 52.782 217.962 68.7751 157.945 70.6512C109.375 72.1694 120.007 32.3188 163.595 52.4388C235.974 85.849 87.2948 140.287 15.9084 149.028"
-                        stroke="url(#paint0_linear_895_4922)" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <defs>
-                        <linearGradient id="paint0_linear_895_4922" x1="53.7628" y1="285.563" x2="134.321" y2="-39.8855"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2F55D4" />
-                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
+            <div class="d-flex justify-content-center justify-end-mobile">
+                <div class="responsive--arrow">
+                    <svg width="301" height="162" viewBox="0 0 301 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.9336 130.691L15.1949 149.387L34.635 158.996" stroke="#2F55D4" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M277.852 1.91972C320.827 52.782 217.962 68.7751 157.945 70.6512C109.375 72.1694 120.007 32.3188 163.595 52.4388C235.974 85.849 87.2948 140.287 15.9084 149.028"
+                            stroke="url(#paint0_linear_895_4922)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_895_4922" x1="53.7628" y1="285.563" x2="134.321"
+                                y2="-39.8855" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg width="144" height="92" viewBox="0 0 144 92" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin-bottom: 35px;">
+                        <path d="M18.1699 76.5925L14.0171 85.9487L23.5741 89.075" stroke="#2F55D4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M124.826 0.918448C147.91 21.4241 101.754 35.5586 74.3325 40.3838C52.1405 44.2887 54.3885 25.2962 75.7227 31.6517C111.149 42.2053 46.5056 77.0107 14.319 85.7377"
+                            stroke="url(#paint0_linear_898_7138)" stroke-linecap="round" stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_898_7138" x1="39.6802" y1="132.834" x2="78.3935"
+                                y2="-19.7361" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
             </div>
             <div class="row tools">
-                <div class="col-12 col-md-5 tools__text">
+                <div class="col-12 col-lg-5 tools__text">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         Tools of the <span class="main-color">Titans</span>
                     </h1>
@@ -363,36 +516,38 @@
                         opportunities
                         of a startup combinedwith the stability of an established corporation. All of this while being
                         completely <b>BOOTSTRAPPED.</b></p>
-                    <img src="./assets/images/benefit.png" alt="benefit">
+                    <div class="tools__text__img">
+                        <img src="./assets/images/benefit.png" alt="benefit">
+                    </div>
                 </div>
-                <div class="col-12 col-md-7 tools__card">
+                <div class="col-12 col-lg-7 tools__card">
                     <div class="row gy-5">
-                        <div class="col-12 col-md-4"></div>
-                        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4"></div>
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
                             <img src="./assets/images/laptop-high-end.png" alt="laptop">
                             <h2 class="text-body-1 text-color-primary fw-bold">High End Laptop</h2>
                             <p class="text-body-2 text-color-secondary">Use laptop facilities with good specifications
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
                             <img src="./assets/images/unlimited-pto.png" alt="pto">
                             <h2 class="text-body-1 text-color-primary fw-bold">Unlimited PTO</h2>
                             <p class="text-body-2 text-color-secondary">Get paid leave by following the provisions
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
                             <img src="./assets/images/health_insurance.png" alt="health">
                             <h2 class="text-body-1 text-color-primary fw-bold">Health Insurance</h2>
                             <p class="text-body-2 text-color-secondary">Get health benefits for each member
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
                             <img src="./assets/images/youtube.png" alt="youtube">
                             <h2 class="text-body-1 text-color-primary fw-bold">Youtube Premium</h2>
                             <p class="text-body-2 text-color-secondary">Get youtube premium access to use
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
                             <img src="./assets/images/dashlane.png" alt="dashlane">
                             <h2 class="text-body-1 text-color-primary fw-bold">Dashlane Premium</h2>
                             <p class="text-body-2 text-color-secondary">Get dashlane premium access for job support</p>
@@ -417,28 +572,44 @@
             </svg>
             <div class="fun-things mt-5">
                 <div class="row">
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-lg-8">
                         <img src="./assets/images/fun_side_things.svg" alt="fun">
                     </div>
                 </div>
-                <svg width="593" height="572" viewBox="0 0 593 572" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M188.92 45.2426C188.92 45.2426 339.648 50.1927 335.823 155.016C332.106 256.897 371.318 377.422 534.677 318.882C633.763 283.375 457.691 168.387 472.686 281.978C510.923 571.622 64.9775 558.112 64.9775 558.112"
-                        stroke="url(#paint0_linear_895_4919)" stroke-width="2" stroke-linecap="round" />
-                    <path d="M76.9303 541.05L63.0346 558.204L81.1823 570.074" stroke="#2F55D4" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <defs>
-                        <linearGradient id="paint0_linear_895_4919" x1="225.916" y1="752.525" x2="370.719" y2="47.4739"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2F55D4" />
-                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
+                <div class="responsive--arrow justify-end-mobile">
+                    <svg width="593" height="572" viewBox="0 0 593 572" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M188.92 45.2426C188.92 45.2426 339.648 50.1927 335.823 155.016C332.106 256.897 371.318 377.422 534.677 318.882C633.763 283.375 457.691 168.387 472.686 281.978C510.923 571.622 64.9775 558.112 64.9775 558.112"
+                            stroke="url(#paint0_linear_895_4919)" stroke-width="2" stroke-linecap="round" />
+                        <path d="M76.9303 541.05L63.0346 558.204L81.1823 570.074" stroke="#2F55D4" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_895_4919" x1="225.916" y1="752.525" x2="370.719"
+                                y2="47.4739" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg width="142" height="83" viewBox="0 0 142 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.9421 68.0186L10.091 77.0326L19.3832 80.8753" stroke="#2F55D4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M127.036 0.658768C148.497 22.8576 101.402 33.4476 73.6924 36.1772C51.2681 38.3863 54.9513 19.6193 75.7415 27.5759C110.265 40.7883 43.1655 70.5862 10.4092 76.8447"
+                            stroke="url(#paint0_linear_895_6822)" stroke-linecap="round" stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_895_6822" x1="32.1222" y1="125.731" x2="82.3055"
+                                y2="-23.4609" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
             </div>
             <div class="work-culture">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6">
                         <h1 class="text-h1 fw-bold text-color-primary">
                             Hybrid Work <span class="main-color">Culture</span>
                         </h1>
@@ -448,7 +619,7 @@
                             together as a unit.
                         </p>
                     </div>
-                    <div class="col-12 col-md-6 row">
+                    <div class="col-12 col-lg-6 row d-none-mobile">
                         <div class="d-flex justify-content-end align-items-end">
                             <button class="button-main-small">Explore Roles</button>
                         </div>
@@ -484,27 +655,43 @@
                     </figure>
                 </div>
             </div>
-            <svg width="293" height="139" viewBox="0 0 293 139" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M274.174 108.739L287.412 126.405L268.829 137.582" stroke="#2F55D4" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M13.5052 1.06459C-25.1362 55.2925 78.6964 62.762 138.664 59.6903C187.195 57.2044 173.317 18.3646 131.534 42.0049C62.1509 81.261 214.808 123.273 286.672 126.107"
-                    stroke="url(#paint0_linear_1192_4133)" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <defs>
-                    <linearGradient id="paint0_linear_1192_4133" x1="221.335" y1="266.185" x2="57.4848" y2="-22.8808"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#2F55D4" />
-                        <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                    </linearGradient>
-                </defs>
-            </svg>
+            <div class="responsive--arrow">
+                <svg width="293" height="139" viewBox="0 0 293 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M274.174 108.739L287.412 126.405L268.829 137.582" stroke="#2F55D4" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M13.5052 1.06459C-25.1362 55.2925 78.6964 62.762 138.664 59.6903C187.195 57.2044 173.317 18.3646 131.534 42.0049C62.1509 81.261 214.808 123.273 286.672 126.107"
+                        stroke="url(#paint0_linear_1192_4133)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_1192_4133" x1="221.335" y1="266.185" x2="57.4848"
+                            y2="-22.8808" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2F55D4" />
+                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <svg width="142" height="83" viewBox="0 0 142 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M126.562 68.0186L131.413 77.0326L122.121 80.8754" stroke="#2F55D4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M14.4676 0.658738C-6.99283 22.8575 40.1024 33.4476 67.8115 36.1772C90.2358 38.3862 86.5526 19.6192 65.7624 27.5759C31.2392 40.7882 98.3384 70.5862 131.095 76.8446"
+                        stroke="url(#paint0_linear_895_6813)" stroke-linecap="round" stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_895_6813" x1="109.382" y1="125.731" x2="59.1984" y2="-23.4609"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2F55D4" />
+                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
             <div class="founding">
                 <h1 class="text-h1 fw-bold text-color-primary text-center">
                     Our Founding <span class="main-color">Team</span>
                 </h1>
                 <div class="row align-items-center founding__card-group">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="founding--card">
                             <img src="./assets/images/founder_1.png" alt="founder">
                             <div class="founding--card__details">
@@ -519,7 +706,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 founding--details pl-100">
+                    <div class="col-12 col-lg-8 founding--details pl-100">
                         <div class="founding--details__card">
                             <h1 class="text-h3 fw-bold text-color-primary">Ac dignissim donec velit diam vestibulum.
                             </h1>
@@ -532,7 +719,7 @@
                     </div>
                 </div>
                 <div class="row align-items-center founding__card-group">
-                    <div class="col-12 col-md-8 founding--details pr-100">
+                    <div class="col-12 col-lg-8 founding--details pr-100">
                         <div class="founding--details__card">
                             <h1 class="text-h3 fw-bold text-color-primary">Ac dignissim donec velit diam vestibulum.
                             </h1>
@@ -543,7 +730,7 @@
                                 arcu nulla. Nec eget vel erat at egestas orci. Eu.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="founding--card">
                             <img src="./assets/images/founder_2.png" alt="founder">
                             <div class="founding--card__details">
@@ -560,24 +747,42 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <svg width="557" height="334" viewBox="0 0 557 334" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M504.232 214.358L526.093 217.431L520.913 238.488" stroke="#2F55D4" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M41.2783 1.76157C41.2783 1.76157 14.8771 45.7196 139.702 155.536C249.158 251.832 129.348 311.186 98.4011 246.799C67.4541 182.411 225.212 128.786 323.093 237.051C403.881 326.408 524.964 218.032 524.964 218.032"
-                                stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round" />
-                            <defs>
-                                <linearGradient id="paint0_linear_895:4913" x1="448.583" y1="544.863" x2="160.948"
-                                    y2="-81.5375" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#2F55D4" />
-                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                    <div class="col-12 col-lg-6">
+                        <div class="responsive--arrow justify-end-mobile">
+                            <svg width="557" height="334" viewBox="0 0 557 334" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M504.232 214.358L526.093 217.431L520.913 238.488" stroke="#2F55D4"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M41.2783 1.76157C41.2783 1.76157 14.8771 45.7196 139.702 155.536C249.158 251.832 129.348 311.186 98.4011 246.799C67.4541 182.411 225.212 128.786 323.093 237.051C403.881 326.408 524.964 218.032 524.964 218.032"
+                                    stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_895:4913" x1="448.583" y1="544.863" x2="160.948"
+                                        y2="-81.5375" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2F55D4" />
+                                        <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg width="142" height="83" viewBox="0 0 142 83" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 35px;">
+                                <path d="M14.9421 68.0186L10.091 77.0326L19.3832 80.8754" stroke="#2F55D4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M127.036 0.65886C148.497 22.8577 101.402 33.4477 73.6924 36.1773C51.2681 38.3864 54.9513 19.6194 75.7415 27.576C110.265 40.7884 43.1655 70.5863 10.4092 76.8448"
+                                    stroke="url(#paint0_linear_895_6825)" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_895_6825" x1="32.1222" y1="125.731" x2="82.3055"
+                                        y2="-23.4608" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2F55D4" />
+                                        <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 about--end">
+                    <div class="col-12 col-lg-6 about--end">
                         <h1 class="text-h1 fw-bold text-color-primary">
                             Want to Know <span class="main-color">Our Experience ?</span>
                         </h1>
@@ -587,30 +792,48 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 about--end">
+                <div class="row current-openings">
+                    <div class="col-12 col-lg-6 about--end">
                         <h1 class="text-h1 fw-bold text-color-primary">
                             Current <span class="main-color">Openings</span> </h1>
                         <p class="text-body-2 text-color-secondary mt-4">
                             Start finding your purpose with DEVZA. See our latest vacancies below.
                         </p>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <svg width="466" height="310" viewBox="0 0 466 310" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M54.3208 273.162L32.894 278.475L40.221 298.885" stroke="#2F55D4" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M435.715 1.37969C461.672 73.1048 372.227 107.615 336.957 136.164C292.869 171.85 319.093 231.485 383.191 199.777C447.29 168.069 297.316 82.9321 258.971 184.376C220.625 285.82 127.572 330.049 34.9531 279.74"
-                                stroke="url(#paint0_linear_1192_3992)" stroke-width="2" stroke-linecap="round" />
-                            <defs>
-                                <linearGradient id="paint0_linear_1192_3992" x1="356.445" y1="747.367" x2="573.84"
-                                    y2="64.1088" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#2F55D4" />
-                                    <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                    <div class="col-12 col-lg-6">
+                        <div class="responsive--arrow">
+                            <svg width="466" height="310" viewBox="0 0 466 310" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M54.3208 273.162L32.894 278.475L40.221 298.885" stroke="#2F55D4"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M435.715 1.37969C461.672 73.1048 372.227 107.615 336.957 136.164C292.869 171.85 319.093 231.485 383.191 199.777C447.29 168.069 297.316 82.9321 258.971 184.376C220.625 285.82 127.572 330.049 34.9531 279.74"
+                                    stroke="url(#paint0_linear_1192_3992)" stroke-width="2" stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_1192_3992" x1="356.445" y1="747.367" x2="573.84"
+                                        y2="64.1088" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2F55D4" />
+                                        <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg width="142" height="83" viewBox="0 0 142 83" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 35px;">
+                                <path d="M126.562 68.0186L131.413 77.0326L122.121 80.8754" stroke="#2F55D4"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M14.4676 0.65886C-6.99283 22.8577 40.1024 33.4477 67.8115 36.1773C90.2358 38.3864 86.5526 19.6194 65.7624 27.576C31.2392 40.7884 98.3384 70.5863 131.095 76.8448"
+                                    stroke="url(#paint0_linear_895_6816)" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_895_6816" x1="109.382" y1="125.731" x2="59.1984"
+                                        y2="-23.4608" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#2F55D4" />
+                                        <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="main-table">
@@ -625,83 +848,91 @@
                         <button class="button-main-small">Search</button>
                     </div>
                     <div class="main-table__data">
-                        <div class="main-table__data__header row">
-                            <div class="col-12 col-md-3">
-                                <h4 class="main-color text-h4 fw-bold">
-                                    POSITION
-                                </h4>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <h4 class="main-color text-h4 fw-bold">
-                                    STATUS
-                                </h4>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <h4 class="main-color text-h4 fw-bold">
-                                    LOCATION
-                                </h4>
-                            </div>
-                            <div class="col-12 col-md-3"></div>
-                        </div>
-                        <div class="main-table__data__item row">
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">GFX Designers</p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">Full-Time Remote</p>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">India</p>
-                            </div>
-                            <div class="col-12 col-md-3 d-flex justify-content-end">
-                                <button class="button-secondary-small">Apply Now</button>
+                        <div class="d-none-mobile">
+                            <div class="main-table__data__header row">
+                                <div class="col-12 col-lg-3">
+                                    <h4 class="main-color text-h4 fw-bold">
+                                        POSITION
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h4 class="main-color text-h4 fw-bold">
+                                        STATUS
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <h4 class="main-color text-h4 fw-bold">
+                                        LOCATION
+                                    </h4>
+                                </div>
+                                <div class="col-12 col-lg-3"></div>
                             </div>
                         </div>
                         <div class="main-table__data__item row">
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">HR Executive</p>
+                            <div class="col-12 col-lg-3">
+                                <p class="text-body-1 text-color-primary pl-0 ml-0 text--item-title">GFX Designers
+                                </p>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">Full-Time Remote</p>
+                            <div class="col-12 col-lg-3">
+                                <p class="text-body-1 text-color-primary pl-0 ml-0 text--item-subtitle">Full-Time Remote
+                                    <span class="d-show-mobile">
+                                        ・ INDIA
+                                    </span>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-lg-3 d-none-mobile">
                                 <p class="text-body-1 text-color-primary pl-0 ml-0">India</p>
                             </div>
-                            <div class="col-12 col-md-3 d-flex justify-content-end">
-                                <button class="button-secondary-small">Apply Now</button>
+                            <div class="col-12 col-lg-3 d-flex justify-content-end">
+                                <button class="button-secondary-small">Apply
+                                    <span class="d-none-mobile">Now</span>
+                                </button>
                             </div>
                         </div>
                         <div class="main-table__data__item row">
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">Video Editors</p>
+                            <div class="col-12 col-lg-3">
+                                <p class="text-body-1 text-color-primary pl-0 ml-0 text--item-title">HR Executive</p>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">Full-Time Remote</p>
+                            <div class="col-12 col-lg-3">
+                                <p class="text-body-1 text-color-primary pl-0 ml-0 text--item-subtitle">Full-Time Remote
+                                    <span class="d-show-mobile">
+                                        ・ INDIA
+                                    </span>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-lg-3 d-none-mobile">
                                 <p class="text-body-1 text-color-primary pl-0 ml-0">India</p>
                             </div>
-                            <div class="col-12 col-md-3 d-flex justify-content-end">
-                                <button class="button-secondary-small">Apply Now</button>
+                            <div class="col-12 col-lg-3 d-flex justify-content-end">
+                                <button class="button-secondary-small">Apply
+                                    <span class="d-none-mobile">Now</span>
+                                </button>
                             </div>
                         </div>
                         <div class="main-table__data__item row">
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">Front-End Developer</p>
+                            <div class="col-12 col-lg-3">
+                                <p class="text-body-1 text-color-primary pl-0 ml-0 text--item-title">Front-End Developer
+                                </p>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">Full-Time Remote</p>
+                            <div class="col-12 col-lg-3">
+                                <p class="text-body-1 text-color-primary pl-0 ml-0 text--item-subtitle">Full-Time Remote
+                                    <span class="d-show-mobile">
+                                        ・ INDIA
+                                    </span>
+                                </p>
                             </div>
-                            <div class="col-12 col-md-3">
-                                <p class="text-body-1 text-color-primary pl-0 ml-0">India</p>
+                            <div class="col-12 col-lg-3">
+                                <p class="text-body-1 text-color-primary pl-0 ml-0 d-none-mobile">India</p>
                             </div>
-                            <div class="col-12 col-md-3 d-flex justify-content-end">
-                                <button class="button-secondary-small">Apply Now</button>
+                            <div class="col-12 col-lg-3 d-flex justify-content-end">
+                                <button class="button-secondary-small">Apply
+                                    <span class="d-none-mobile">Now</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="main-table__footer">
-                        <div class="main-table__footer__filter-page d-inline-flex">
+                        <div class="main-table__footer__filter-page d-inline-flex d-none-mobile">
                             <p class="text-body-3 text-color-primary">Jobs Per Page</p>
                             <select class="form-select">
                                 <option selected>25</option>
@@ -732,21 +963,38 @@
                         </button>
                     </div>
                 </div>
-                <svg width="236" height="167" viewBox="0 0 236 167" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M221.686 136.383L234.933 154.042L216.355 165.229" stroke="#2F55D4" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M13.8878 1.37646C-22.5868 57.0849 23.9393 98.6332 83.7393 93.2008C132.134 88.8045 116.737 50.5417 75.9177 75.8102C8.13563 117.77 162.329 153.733 234.249 153.733"
-                        stroke="url(#paint0_linear_895_4901)" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <defs>
-                        <linearGradient id="paint0_linear_895_4901" x1="162.301" y1="276.928" x2="139.295" y2="-23.0069"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2F55D4" />
-                            <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
+                <div class="responsive--arrow justify-end-mobile">
+                    <svg width="236" height="167" viewBox="0 0 236 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M221.686 136.383L234.933 154.042L216.355 165.229" stroke="#2F55D4" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M13.8878 1.37646C-22.5868 57.0849 23.9393 98.6332 83.7393 93.2008C132.134 88.8045 116.737 50.5417 75.9177 75.8102C8.13563 117.77 162.329 153.733 234.249 153.733"
+                            stroke="url(#paint0_linear_895_4901)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_895_4901" x1="162.301" y1="276.928" x2="139.295"
+                                y2="-23.0069" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg width="142" height="83" viewBox="0 0 142 83" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin: 20px 0 20px 0;">
+                        <path d="M14.9421 68.0184L10.091 77.0324L19.3832 80.8751" stroke="#2F55D4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M127.036 0.65886C148.497 22.8577 101.402 33.4477 73.6924 36.1773C51.2681 38.3864 54.9513 19.6194 75.7415 27.576C110.265 40.7884 43.1655 70.5863 10.4092 76.8448"
+                            stroke="url(#paint0_linear_895_6828)" stroke-linecap="round" stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_895_6828" x1="32.1222" y1="125.731" x2="82.3055"
+                                y2="-23.4608" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
                 <div class="our-team">
                     <h1 class="text-h1 fw-bold text-color-primary text-center">
                         <h1 class="text-h1 fw-bold text-color-primary text-center">
@@ -767,7 +1015,7 @@
                     </div>
                     <div class="our-team__nationality">
                         <div class="row">
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_us.svg" alt="us">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #41479B;">UNITED STATES</h3>
@@ -861,7 +1109,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_cyprus.svg" alt="cyprus">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #FF4B55;">CYPRUS</h3>
@@ -901,7 +1149,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_india.svg" alt="india">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #73AF00;">INDIA</h3>
@@ -1013,7 +1261,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_bangladesh.svg" alt="bangladesh">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #496E2D;">BANGLADESH</h3>
@@ -1032,7 +1280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end">
+                <div class="d-flex justify-content-end responsive--arrow">
                     <svg width="465" height="311" viewBox="0 0 465 311" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M54.1172 273.406L32.6904 278.72L40.0174 299.129" stroke="#2F55D4" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" />
@@ -1047,10 +1295,26 @@
                             </linearGradient>
                         </defs>
                     </svg>
+                    <svg width="142" height="83" viewBox="0 0 142 83" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin: 17px 0;">
+                        <path d="M14.9421 68.0174L10.091 77.0314L19.3832 80.8741" stroke="#2F55D4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M127.036 0.657883C148.497 22.8567 101.402 33.4467 73.6924 36.1764C51.2681 38.3854 54.9513 19.6184 75.7415 27.575C110.265 40.7874 43.1655 70.5853 10.4092 76.8438"
+                            stroke="url(#paint0_linear_895_6831)" stroke-linecap="round" stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="paint0_linear_895_6831" x1="32.1222" y1="125.73" x2="82.3055"
+                                y2="-23.4618" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#2F55D4" />
+                                <stop offset="1" stop-color="#2F55D4" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
                 </div>
                 <div class="blog">
                     <div class="row align-items-center">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                             <h1 class="text-h1 fw-bold text-color-primary">
                                 Our Latest <span class="main-color">Blog</span>
                             </h1>
@@ -1058,7 +1322,7 @@
                                 what we are doing, you can read about it on the
                                 blog we have created.</p>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6 d-none-mobile">
                             <div class="d-flex justify-content-end">
                                 <button class="button-main-small">View All</button>
                             </div>
@@ -1114,6 +1378,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="d-show-mobile button--view-all-mobile">
+                        <button class="button-main-small">View All</button>
+                    </div>
                 </div>
             </div>
 
@@ -1123,7 +1390,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-3 footer__logo">
+                <div class="col-12 col-lg-3 footer__logo">
                     <img src="./assets/images/Devza_footer.svg" alt="devza">
                     <p class="text-body-1 text-color-footer">7208 W. Sand lake Road Suite 305 Orlando, FL USA 32819</p>
                     <div class="d-flex align-items-center">
@@ -1134,17 +1401,17 @@
                         <img src="./assets/images/youtube-fill.svg" alt="youtube">
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-lg-3">
                     <h1 class="text-h4 fw-semi-bold text-color-white">Company</h1>
                     <p class="text-list text-body-2 text-color-footer">About us</p>
                     <p class="text-list text-body-2 text-color-footer">Careers</p>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-lg-3">
                     <h1 class="text-h4 fw-semi-bold text-color-white">Useful Links</h1>
                     <p class="text-list text-body-2 text-color-footer">Terms of Services</p>
                     <p class="text-list text-body-2 text-color-footer">Privacy Policy</p>
                 </div>
-                <div class="col-12 col-md-3 footer__news__letter">
+                <div class="col-12 col-lg-3 footer__news__letter">
                     <h1 class="text-h4 fw-semi-bold text-color-white">Newsletter</h1>
                     <p class="text-body-2 text-color-footer">Sign up and receive the latest tips via email.</p>
                     <div class="footer__input">
