@@ -337,6 +337,7 @@ p {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 6px;
+    box-shadow: 0 0 3px rgb(60 72 88 / 15%);
 }
 
 .main-dropdown__content::before {
