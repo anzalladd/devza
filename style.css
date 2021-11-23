@@ -604,6 +604,7 @@ p {
     transition: all .3s;
     cursor: pointer;
     box-shadow: 0;
+    padding: 12px;
 }
 
 .feature__item__picture div:hover {
@@ -613,6 +614,7 @@ p {
 .feature__item__picture img {
     width: 80px;
     height: 80px;
+    margin-bottom: 14px;
 }
 
 .feature__item:last-child {
