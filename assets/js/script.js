@@ -36,8 +36,7 @@ $(document).ready(function () {
         map: {
             container: "map",
             style: "mapbox://styles/mapbox/dark-v10",
-            center: [-65.017, -16.457],
-            zoom: 5,
+            zoom: 1,
         },
     };
 
@@ -62,17 +61,41 @@ $(document).ready(function () {
         };
     }
 
-    const markerJSON = [{
-        user: {
-            name: "Andreas Christ",
-            role: "Engineering",
+    const markerJSON = [
+        {
+            user: {
+                name: "Aakash Lohchab",
+                role: "Executive Evaluator",
+            },
+            image: "assets/images/maps-location/person/person_7.png",
+            geometry: {
+                type: "Point",
+                coordinates: [75.7873, 26.9124],
+            },
         },
-        image: "assets/images/team-image/team_1.png",
-        geometry: {
-            type: "Point",
-            coordinates: [-66.324462, -16.024695],
+        {
+            user: {
+                name: "Dushyant Singh",
+                role: "CEO",
+            },
+            image: "assets/images/maps-location/person/person_1.png",
+            geometry: {
+                type: "Point",
+                coordinates: [-81.5308110865, 28.3361762024],
+            },
         },
-    }, ];
+        {
+            user: {
+                name: "Stelios Kiliaris",
+                role: "PKCY",
+            },
+            image: "assets/images/maps-location/person/person_5.png",
+            geometry: {
+                type: "Point",
+                coordinates: [33.4299, 35.1264],
+            },
+        },
+    ];
 
     markerJSON.forEach((marker, idx) => {
         const el = document.createElement("div");
@@ -88,8 +111,8 @@ $(document).ready(function () {
                 </svg>
             </div>
             <div class="marker__text">
-                <h3 class="text-body-1 fw-bold">Andreas Christ</h3>
-                <p class="text-body-3 text-color-secondary">Engineering</p>
+                <h3 class="text-body-1 fw-bold">${marker.user.name}</h3>
+                <p class="text-body-3 text-color-secondary">${marker.user.role}</p>
             </div>
         </div>
     `;
@@ -117,7 +140,35 @@ $("#menuNavbar").click(function () {
 
 $(function () {
     $(document).scroll(function () {
-        var $nav = $(".wrapper-nav");
+        const $nav = $(".wrapper-nav");
+        const $floatingButton = $("#button-floating")
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $floatingButton.toggleClass('active', $(this).scrollTop() > $nav.height())
     });
 });
+
+$(document).ready(function() {
+    $("#button-floating").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "fast");
+        return false;
+      });
+})
+
+function openModal(nameFile){
+    $('body').addClass('stop-scrolling')
+    $('body').bind('touchmove', function(e){e.preventDefault()})
+    $('.main-modal').addClass('active')
+    const video = document.getElementsByTagName('video')[0];
+    var sources = video.getElementsByTagName('source');
+    sources[0].src = `./assets/video/${nameFile}.mp4`;
+    video.load();
+}
+
+function closeModal(){
+    $('body').removeClass('stop-scrolling')
+    $('.main-modal').removeClass('active')
+    const video = document.getElementsByTagName('video')[0];
+    video.pause();
+    video.currentTime = 0;
+    $('body').unbind('touchmove')
+}
