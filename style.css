@@ -173,7 +173,7 @@ p {
 
 .button--floating {
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     background-color: #2F55D4;
     width: 60px;
     height: 60px;
@@ -186,6 +186,7 @@ p {
     cursor: pointer;
     opacity: 0;
     transition: all .3s ease-in-out;
+    border-radius: 6px;
 }
 
 .button--floating.active {
@@ -256,8 +257,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .main-nav__bar {
@@ -299,6 +300,11 @@ p {
     width: 100%;
     margin-top: 12px;
     margin-bottom: 20px;
+}
+
+.main-nav__item {
+    position: relative;
+    top: 0.75rem;
 }
 
 .main-nav__item p {
@@ -377,7 +383,7 @@ p {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     top: 0;
     z-index: -2;
 }
@@ -1243,6 +1249,12 @@ a.mapboxgl-ctrl-logo {
     margin-bottom: 20px;
 }
 
+.footer small {
+    display: block;
+    position: relative;
+    margin-top: -52px;
+}
+
 @media(min-width: 1400px){
     .container {
         max-width: 1140px !important;
@@ -1252,6 +1264,11 @@ a.mapboxgl-ctrl-logo {
 @media (max-width:992px) {
     .main-nav__bar {
         display: block;
+    }
+
+    .footer small {
+        display: block;
+        margin-top: unset;
     }
 
     .main-nav__button {
@@ -1298,6 +1315,25 @@ a.mapboxgl-ctrl-logo {
 
 .our-experience .responsive--arrow svg:nth-child(1){
     width: 100%;
+}
+
+.main-table__filter input:focus {
+    border: 1px solid #2F55D4;
+    box-shadow: unset !important;
+}
+
+.main-table__data__item .text--item-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #161C2D;
+}
+
+.main-table__data__item .text--item-subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    color: #5B657C;
+    font-weight: normal;
 }
 
 @media (max-width:1439px){
@@ -1512,19 +1548,6 @@ a.mapboxgl-ctrl-logo {
 
     .d-show-mobile {
         display: unset;
-    }
-
-    .main-table__data__item .text--item-title {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 22px;
-        color: #161C2D;
-    }
-
-    .main-table__data__item .text--item-subtitle {
-        font-size: 12px;
-        line-height: 20px;
-        color: #5B657C;
     }
 
     .main-table__data__item button {

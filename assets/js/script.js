@@ -24,7 +24,6 @@ $(document).ready(function () {
                 margin: 30
             }
         },
-        stagePadding: 40,
     })
 })
 
