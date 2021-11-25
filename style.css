@@ -21,6 +21,10 @@ p {
     margin-bottom: 0;
 }
 
+figure {
+    margin: 0;
+}
+
 .lh-0 {
     line-height: inherit;
 }
@@ -211,7 +215,7 @@ p {
     opacity: 0;
 }
 
-.main-modal.active{
+.main-modal.active {
     transform: scale(1);
     opacity: 1;
 }
@@ -271,7 +275,7 @@ p {
     position: fixed;
     width: 100%;
     height: 0;
-    top: 85px;
+    top: 55px;
     -moz-transition: height .5s;
     -ms-transition: height .5s;
     -o-transition: height .5s;
@@ -334,7 +338,7 @@ p {
     cursor: pointer;
 }
 
-.main-dropdown__content{
+.main-dropdown__content {
     display: none;
     position: absolute;
     left: 0;
@@ -363,7 +367,7 @@ p {
     box-shadow: -2px 2px 2px -1px rgb(60 72 88 / 15%);
 }
 
-.main-dropdown:hover .main-dropdown__content{
+.main-dropdown:hover .main-dropdown__content {
     display: inline-block;
 }
 
@@ -460,16 +464,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-@media (max-width:992px){
-    .dot-fourth {
-        left: -100px;
-    }
-
-    .dout-fifth {
-        right: -100px;
-    }
 }
 
 .row-carousel {
@@ -693,7 +687,7 @@ p {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    grid-gap: 30px;
+    cursor: pointer;
 }
 
 .images-grid__item:nth-child(1) {
@@ -1219,7 +1213,7 @@ a.mapboxgl-ctrl-logo {
     margin-top: -52px;
 }
 
-@media(min-width: 1400px){
+@media(min-width: 1400px) {
     .container {
         max-width: 1140px !important;
     }
@@ -1250,6 +1244,22 @@ a.mapboxgl-ctrl-logo {
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    .feature__item__text {
+        margin-top: 35px;
+    }
+
+    .text--item-subtitle {
+        margin-right: 86px;
+    }
+
+    .images-grid {
+        grid-gap: 15px;
+    }
+
+    .images-grid__img {
+        width: 100%;
+    }
 }
 
 .wrapper-nav.scrolled {
@@ -1269,15 +1279,15 @@ a.mapboxgl-ctrl-logo {
     display: none;
 }
 
-.our-story .responsive--arrow svg:nth-child(1){
+.our-story .responsive--arrow svg:nth-child(1) {
     width: 100%;
 }
 
-.who-are-we .responsive--arrow svg:nth-child(1){
+.who-are-we .responsive--arrow svg:nth-child(1) {
     width: 100%;
 }
 
-.our-experience .responsive--arrow svg:nth-child(1){
+.our-experience .responsive--arrow svg:nth-child(1) {
     width: 100%;
 }
 
@@ -1343,12 +1353,12 @@ a.mapboxgl-ctrl-logo {
     top: -80%;
 }
 
-.fun-things .dot--images:nth-child(1){
+.fun-things .dot--images:nth-child(1) {
     left: -30%;
     top: -80%;
 }
 
-.fun-things .dot--images:nth-child(2){
+.fun-things .dot--images:nth-child(2) {
     right: -30%;
 }
 
@@ -1379,11 +1389,11 @@ a.mapboxgl-ctrl-logo {
     top: -200px;
 }
 
-@media (max-width:1439px){
-   .main-modal {
-       padding-left: 100px;
-       padding-right: 100px;
-   } 
+@media (max-width:1439px) {
+    .main-modal {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
 @media (max-width:992px) {
@@ -1391,13 +1401,16 @@ a.mapboxgl-ctrl-logo {
         padding: 8px;
         left: 5px;
     }
+
     .main-modal button img {
         width: 16px;
     }
+
     .main-modal {
         padding-left: 40px;
         padding-right: 40px;
     }
+
     .wrapper-nav {
         background-color: white;
         box-shadow: 0px 8px 28px rgba(41, 41, 62, 0.12);
@@ -1539,7 +1552,7 @@ a.mapboxgl-ctrl-logo {
     }
 
     .images-grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         grid-auto-flow: row;
         grid-template-rows: unset;
     }
@@ -1640,7 +1653,7 @@ a.mapboxgl-ctrl-logo {
         width: 100%;
     }
 
-    .main-card{
+    .main-card {
         padding: 42px 30px;
     }
 
@@ -1652,12 +1665,8 @@ a.mapboxgl-ctrl-logo {
 
 }
 
-@media(max-width:576px){
-    .images-grid {
-        grid-template-columns: 100% !important;
-    }
-
-    .images-grid__item  {
+@media(max-width:576px) {
+    .images-grid__item {
         width: 100%;
     }
 
@@ -1666,12 +1675,12 @@ a.mapboxgl-ctrl-logo {
         grid-row: unset !important;
     }
 
-    .images-grid__item:nth-child(8){
+    .images-grid__item:nth-child(8) {
         grid-column: unset !important;
         grid-row: unset !important;
     }
 
-    .images-grid__item:nth-child(9){
+    .images-grid__item:nth-child(9) {
         grid-column: unset !important;
         grid-row: unset !important;
     }

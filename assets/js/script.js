@@ -171,3 +171,7 @@ function closeModal(){
     video.currentTime = 0;
     $('body').unbind('touchmove')
 }
+
+function openImage(src){
+    window.open(src, "_blank",)
+}
