@@ -383,7 +383,7 @@ p {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     top: 0;
     z-index: -2;
 }
@@ -460,45 +460,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-.dot-first {
-    position: absolute;
-    right: 0;
-    margin-top: 200px;
-    z-index: -1;
-}
-
-.dot-second {
-    position: absolute;
-    left: 0;
-    margin-top: 200px;
-    z-index: -1;
-}
-
-.dot-third {
-    position: absolute;
-    right: 0;
-    z-index: -1;
-}
-
-.dot-fourth {
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    top: -200px;
-    left: -200px;
-    display: flex;
-    flex-direction: column;
-}
-
-.dot-fifth {
-    position: absolute;
-    right: -200px;
-    bottom: -100px;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
 }
 
 @media (max-width:992px){
@@ -771,6 +732,7 @@ p {
 }
 
 .founding {
+    position: relative;
     margin-top: -30px;
 }
 
@@ -788,6 +750,7 @@ p {
     align-items: center;
     transition: all .3s;
     overflow: hidden;
+    background-color: white;
 }
 
 .founding--card img {
@@ -864,6 +827,7 @@ p {
     box-shadow: 0px 18px 48px rgba(41, 41, 62, 0.15);
     border-radius: 16px;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 .main-table__filter {
@@ -1334,6 +1298,85 @@ a.mapboxgl-ctrl-logo {
     line-height: 20px;
     color: #5B657C;
     font-weight: normal;
+}
+
+.dot--images {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+}
+
+.our-story {
+    position: relative;
+}
+
+.our-story .dot--images {
+    right: -30%;
+    top: 60px;
+}
+
+.building-botza {
+    position: relative;
+}
+
+.building-botza .dot--images {
+    left: -30%;
+    top: 120px;
+}
+
+.how-botza {
+    position: relative;
+}
+
+.how-botza .dot--images {
+    right: -30%;
+    top: 150px;
+}
+
+.tools {
+    position: relative;
+}
+
+.tools .dot--images {
+    right: -30%;
+    top: -80%;
+}
+
+.fun-things .dot--images:nth-child(1){
+    left: -30%;
+    top: -80%;
+}
+
+.fun-things .dot--images:nth-child(2){
+    right: -30%;
+}
+
+.founding .dot--images {
+    left: -30%;
+    top: -250px;
+}
+
+.our-experience .dot--images {
+    left: -30%;
+    top: 20px;
+}
+
+.current-openings .dot--images {
+    right: -30%;
+    left: unset;
+    top: 100px;
+}
+
+.our-team .dot--images {
+    left: -30%;
+    top: -500px;
+}
+
+.our-team__nationality .dot--images {
+    left: unset;
+    right: -30%;
+    top: -200px;
 }
 
 @media (max-width:1439px){
