@@ -396,10 +396,6 @@ figure {
     margin-top: 60px;
 }
 
-.header__content--main-text {
-    position: relative;
-    left: 25px;
-}
 
 .header__content--main-text img {
     margin-top: -50px;
@@ -583,10 +579,6 @@ figure {
     text-align: center;
 }
 
-.our-internal p {
-    margin-top: 30px;
-}
-
 .warning--label {
     color: var(--warning--700);
     background-color: var(--warning--100);
@@ -649,10 +641,6 @@ figure {
 
 .feature__item:last-child {
     border-bottom: none;
-}
-
-.tools__text h1 {
-    margin-bottom: 30px;
 }
 
 .tools__text img {
@@ -1275,6 +1263,10 @@ a.mapboxgl-ctrl-logo {
     .what-is-link {
         margin-top: 35px;
     }
+    .header__content--main-text {
+        position: relative;
+        left: 25px;
+    }
 }
 
 .wrapper-nav.scrolled {
@@ -1705,7 +1697,7 @@ a.mapboxgl-ctrl-logo {
     }
     .text-header {
         font-size: 44px;
-        line-height: 150%;
+        line-height: 120%;
     }
     .text-h1 {
         font-size: 20px;
