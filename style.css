@@ -398,7 +398,8 @@ figure {
 
 
 .header__content--main-text img {
-    margin-top: -50px;
+    width: 31px;
+    height: 38px;
 }
 
 .header__video img {
@@ -1263,9 +1264,10 @@ a.mapboxgl-ctrl-logo {
     .what-is-link {
         margin-top: 35px;
     }
+
     .header__content--main-text {
         position: relative;
-        left: 25px;
+        left: 10px;
     }
 }
 
@@ -1670,6 +1672,10 @@ a.mapboxgl-ctrl-logo {
         margin-bottom: 70px;
     }
 
+    .about-section {
+        margin-top: 0;
+    }
+
 }
 
 @media(max-width:576px) {
@@ -1695,29 +1701,40 @@ a.mapboxgl-ctrl-logo {
     .header__video__wrapper .icon--stamp {
         right: 0;
     }
+
     .text-header {
         font-size: 44px;
         line-height: 120%;
     }
+
     .text-h1 {
         font-size: 20px;
         line-height: 150%;
     }
-    .text-body-1{
+
+    .text-body-1 {
         font-size: 14px;
         line-height: 150%;
     }
-    .text-body-2{
+
+    .text-body-2 {
         font-size: 12px;
         line-height: 150%;
     }
+
     .text-h3 {
         font-size: 16px;
         line-height: 150%;
     }
-    .text-h4{
+
+    .text-h4 {
         font-size: 20px;
         line-height: 150%;
+    }
+
+    .header__content--main-text img {
+        width: 18.64px;
+        height: 21.2px;
     }
 }
 
