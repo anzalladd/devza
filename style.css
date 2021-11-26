@@ -396,6 +396,11 @@ figure {
     margin-top: 60px;
 }
 
+.header__content--main-text {
+    position: relative;
+    left: 25px;
+}
+
 .header__content--main-text img {
     margin-top: -50px;
 }
@@ -619,7 +624,6 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     border-radius: 16px;
     transition: all .3s;
     cursor: pointer;
@@ -627,8 +631,14 @@ figure {
     padding: 12px;
 }
 
+.feature__item__picture div img {
+    width: 80px;
+    height: 80px;
+}
+
 .feature__item__picture div:hover {
     box-shadow: 0px 8px 28px rgba(41, 41, 62, 0.08);
+    background-color: white;
 }
 
 .feature__item__picture img {
@@ -659,8 +669,9 @@ figure {
     position: relative;
 }
 
-.fun-things img {
+.fun-things--image {
     cursor: pointer;
+    width: 100%;
 }
 
 .fun-things svg {
@@ -1260,6 +1271,10 @@ a.mapboxgl-ctrl-logo {
     .images-grid__img {
         width: 100%;
     }
+
+    .what-is-link {
+        margin-top: 35px;
+    }
 }
 
 .wrapper-nav.scrolled {
@@ -1687,6 +1702,30 @@ a.mapboxgl-ctrl-logo {
 
     .header__video__wrapper .icon--stamp {
         right: 0;
+    }
+    .text-header {
+        font-size: 44px;
+        line-height: 150%;
+    }
+    .text-h1 {
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .text-body-1{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .text-body-2{
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .text-h3 {
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .text-h4{
+        font-size: 20px;
+        line-height: 150%;
     }
 }
 
