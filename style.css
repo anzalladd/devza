@@ -1300,7 +1300,7 @@ a.mapboxgl-ctrl-logo {
     width: 100%;
 }
 
-.main-table__filter input:focus {
+.main-table__filter input:focus, .main-table__filter select:focus {
     border: 1px solid #2F55D4;
     box-shadow: unset !important;
 }
