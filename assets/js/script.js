@@ -10,6 +10,7 @@ $(document).ready(function () {
     $('.next-carousel--btn').click(function () {
         owl.trigger('next.owl.carousel')
     })
+    AOS.init();
 })
 
 $(document).ready(function () {

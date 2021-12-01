@@ -15,6 +15,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -90,7 +91,7 @@
             <header class="header">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 header__content">
-                        <h1 class="text-header fw-bold">
+                        <h1 class="text-header fw-bold" data-aos="fade-up">
                             <div class="text-color-secondary">Hi.!</div>
                             <div class="text-color-primary">We Are</div>
                             <div class="main-color d-flex header__content--main-text fw-extra-bold">
@@ -101,7 +102,7 @@
                     </div>
                     <div class="col-12 col-lg-6 header__video">
                         <img src="./assets/images/video_thumbnail_header.png" alt="thumbnail"
-                            onclick="openModal('work_culture')">
+                            onclick="openModal('work_culture')" data-aos="fade-down">
                     </div>
                 </div>
             </header>
@@ -109,16 +110,17 @@
     <!-- Section About -->
     <section class="about-section">
         <div class="container">
-            <div class="row who-are-we">
+            <div class="row who-are-we" id="who-are-we">
                 <div class="col-12 col-lg-6">
                     <div class="responsive--arrow justify-end-mobile">
                         <svg width="557" height="334" viewBox="0 0 557 334" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M504.232 214.358L526.093 217.431L520.913 238.488" stroke="#2F55D4" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="500" />
                             <path
                                 d="M41.2783 1.76157C41.2783 1.76157 14.8771 45.7196 139.702 155.536C249.158 251.832 129.348 311.186 98.4011 246.799C67.4541 182.411 225.212 128.786 323.093 237.051C403.881 326.408 524.964 218.032 524.964 218.032"
-                                stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round" />
+                                stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round"
+                                data-aos="dash" data-aos-duration="1000" data-aos-easing="ease-out-cubic" />
                             <defs>
                                 <linearGradient id="paint0_linear_895:4913" x1="448.583" y1="544.863" x2="160.948"
                                     y2="-81.5375" gradientUnits="userSpaceOnUse">
@@ -144,7 +146,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 about--end">
+                <div class="col-12 col-lg-6 about--end" data-aos="fade-right" data-aos-delay="500">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         Who <span class="main-color fw-extra-bold">Are We</span> ?
                     </h1>
@@ -159,7 +161,8 @@
             </div>
             <div class="row our-story">
                 <img src="./assets/images/dots/dot_our_story.svg" alt="our-story" class="dot--images">
-                <div class="col-12 col-lg-6 about--end">
+                <div class="col-12 col-lg-6 about--end" data-aos="fade-right" data-aos-delay="500"
+                    data-aos-anchor-placement="top-center">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         Want to Know <span class="main-color fw-extra-bold">Our Story</span> ?
                     </h1>
@@ -175,10 +178,13 @@
                         <svg width="551" height="317" viewBox="0 0 551 317" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M48.7433 197.486L26.7887 199.796L31.234 221.021" stroke="#2F55D4" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="500"
+                                data-aos-anchor-placement="top-center" data-aos-offset="1000" />
                             <path
                                 d="M518.806 1.11199C518.806 1.11199 543.663 45.9613 415.095 151.372C302.358 243.804 420.032 307.288 453.198 244.015C486.365 180.742 330.567 121.665 228.981 226.461C145.136 312.956 27.8936 200.436 27.8936 200.436"
-                                stroke="url(#paint0_linear_895:4910)" stroke-width="2" stroke-linecap="round" />
+                                stroke="url(#paint0_linear_895:4910)" stroke-width="2" stroke-linecap="round"
+                                data-aos="dash" data-aos-duration="1000" data-aos-offset="1000"
+                                data-aos-anchor-placement="top-center"></path> />
                             <defs>
                                 <linearGradient id="paint0_linear_895:4910" x1="92.8656" y1="529.725" x2="402.104"
                                     y2="-86.2972" gradientUnits="userSpaceOnUse">
@@ -212,10 +218,13 @@
                         <svg width="463" height="306" viewBox="0 0 463 306" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M429.788 233.236L451.841 234.243L448.66 255.694" stroke="#2F55D4" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="500"
+                                data-aos-anchor-placement="top-center" data-aos-offset="1500" />
                             <path
                                 d="M2.48581 41.5581C-8.8959 116.982 85.5816 133.274 125.767 154.349C175.999 180.693 161.984 244.313 92.9108 225.796C23.8375 207.279 154.194 94.3746 211.696 186.324C269.198 278.274 369.12 303.388 450.069 235.887"
-                                stroke="url(#paint0_linear_895:4883)" stroke-width="2" stroke-linecap="round" />
+                                stroke="url(#paint0_linear_895:4883)" stroke-width="2" stroke-linecap="round"
+                                data-aos="dash" data-aos-duration="1000" data-aos-anchor-placement="top-center"
+                                data-aos-offset="1500" />
                             <defs>
                                 <linearGradient id="paint0_linear_895:4883" x1="226.564" y1="757.498" x2="-120.649"
                                     y2="130.166" gradientUnits="userSpaceOnUse">
@@ -241,7 +250,8 @@
                         </svg>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 about--end">
+                <div class="col-12 col-lg-6 about--end" data-aos="fade-right" data-aos-delay="500"
+                    data-aos-anchor-placement="center-center">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         We're Now <span class="main-color fw-extra-bold">Building Botza</span> ?
                     </h1>
@@ -252,7 +262,8 @@
                 </div>
             </div>
             <div class="row row-carousel">
-                <div class="col-12 col-lg-7 wrapper-carousel d-flex align-items-center justify-space-between">
+                <div class="col-12 col-lg-7 wrapper-carousel d-flex align-items-center justify-space-between"
+                    data-aos="fade-right" data-aos-anchor-placement="top-center">
                     <div class="btn--carousel prev-carousel--btn">
                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -297,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-5 main-card">
+                <div class="col-12 col-lg-5 main-card" data-aos="fade-left" data-aos-anchor-placement="top-center">
                     <div class="d-flex align-items-center">
                         <img src="./assets/images/botza.png" alt="">
                         <div class="main-card__text">
@@ -308,9 +319,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row how-botza">
+            <div class="row how-botza" id="how-botza">
                 <img src="./assets/images/dots/dot_botza_came.svg" alt="botza-came" class="dot--images">
-                <div class="col-12 col-lg-6 about--end">
+                <div class="col-12 col-lg-6 about--end" data-aos="fade-left" data-aos-delay="500"
+                    data-aos-anchor="#how-botza">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         How <span class="main-color fw-extra-bold">Botza Came</span> to Being ?
                     </h1>
@@ -324,10 +336,13 @@
                         <svg width="463" height="306" viewBox="0 0 463 306" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M33.0892 233.237L11.0363 234.244L14.2169 255.695" stroke="#2F55D4" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="500"
+                                data-aos-anchor-placement="top-center" data-aos-offset="1800" />
                             <path
                                 d="M460.391 41.5586C471.773 116.982 377.295 133.274 337.11 154.349C286.878 180.693 300.893 244.314 369.966 225.796C439.039 207.279 308.683 94.375 251.181 186.325C193.679 278.275 93.7571 303.389 12.8078 235.887"
-                                stroke="url(#paint0_linear_895:4886)" stroke-width="2" stroke-linecap="round" />
+                                stroke="url(#paint0_linear_895:4886)" stroke-width="2" stroke-linecap="round"
+                                data-aos="dash" data-aos-duration="1000" data-aos-anchor-placement="top-center"
+                                data-aos-offset="1800" />
                             <defs>
                                 <linearGradient id="paint0_linear_895:4886" x1="236.313" y1="757.498" x2="583.526"
                                     y2="130.166" gradientUnits="userSpaceOnUse">
@@ -359,11 +374,13 @@
                 <svg width="269" height="218" viewBox="0 0 269 218" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="botza-came-down">
                     <path d="M222.297 184.933L230.917 205.257L210.197 211.656" stroke="#2F55D4" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                        stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="500"
+                        data-aos-anchor-placement="top-center" data-aos-offset="2000" />
                     <path
                         d="M52.9855 3.99002C4.20409 49.3132 39.3954 100.816 98.7508 109.898C146.786 117.248 141.024 76.4077 95.3327 91.1382C19.4599 115.599 160.511 187.527 230.328 204.792"
                         stroke="url(#paint0_linear_895:4907)" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                        stroke-linejoin="round" data-aos="dash" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-center" data-aos-offset="2000" />
                     <defs>
                         <linearGradient id="paint0_linear_895:4907" x1="130.909" y1="307.112" x2="180.579" y2="10.4254"
                             gradientUnits="userSpaceOnUse">
@@ -388,9 +405,9 @@
                     </defs>
                 </svg>
             </div>
-            <div class="row align-items-center justify-content-between position-relative">
+            <div class="row align-items-center justify-content-between position-relative" id="link-snappy">
                 <div class="col-12 col-lg-5">
-                    <div class="main-card">
+                    <div class="main-card" data-aos="fade-right" data-aos-anchor="#link-snappy">
                         <div class="d-flex align-items-center">
                             <img src="./assets/images/link_snappy.png" alt="">
                             <div class="main-card__text">
@@ -402,7 +419,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="what-is-link">
+                    <div class="what-is-link" data-aos="fade-left" data-aos-anchor="#link-snappy">
                         <h1 class="text-h1 fw-bold text-color-primary">
                             What is <span class="main-color fw-extra-bold">Link Snappy</span> ?
                         </h1>
@@ -418,11 +435,13 @@
                     <svg width="237" height="166" viewBox="0 0 237 166" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="link-snappy">
                         <path d="M15.1933 136.006L1.94637 153.666L20.5237 164.852" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
+                            stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="400"
+                            data-aos-anchor-placement="top-center" data-aos-offset="3000" />
                         <path
                             d="M222.991 1C259.466 56.7085 212.94 98.2567 153.14 92.8243C104.745 88.428 120.142 50.1652 160.961 75.4337C228.743 117.393 74.5494 153.357 2.62988 153.357"
                             stroke="url(#paint0_linear_895:4904)" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                            stroke-linejoin="round" data-aos="dash" data-aos-duration="1000"
+                            data-aos-anchor-placement="top-center" data-aos-offset="3000" />
                         <defs>
                             <linearGradient id="paint0_linear_895:4904" x1="74.5775" y1="276.552" x2="97.5838"
                                 y2="-23.3833" gradientUnits="userSpaceOnUse">
@@ -448,15 +467,19 @@
                 </div>
             </div>
             <div class="our-internal">
-                <h1 class="text-h1 fw-bold text-color-primary">
+                <h1 class="text-h1 fw-bold text-color-primary" data-aos-anchor-placement="center-center"
+                    data-aos="fade-up">
                     Our <span class="main-color fw-extra-bold">Internal Tools</span> and <span
                         class="main-color fw-extra-bold">Infrastructure</span>
                 </h1>
-                <p class="text-body-2 text-color-secondary mt-2 mt-sm-4">We also have several products that we are building and these
+                <p class="text-body-2 text-color-secondary mt-2 mt-sm-4" data-aos-anchor-placement="center-center"
+                    data-aos="fade-up">We also have several products that we are
+                    building and these
                     <br>products will be up coming.</p>
             </div>
             <div class="feature">
-                <div class="feature__item row align-items-center">
+                <div class="feature__item row align-items-center" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 warning--label fw-bold">Under Construction</div>
                         <h3 class="text-h3 fw-bold text-color-primary">Over 70 gigabit servers and a VPN network...</h3>
@@ -471,7 +494,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__item row align-items-center">
+                <div class="feature__item row align-items-center" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 success--label fw-bold">Releasing Soon</div>
                         <h3 class="text-h3 fw-bold text-color-primary">A tool that enhanced our productivity...</h3>
@@ -485,7 +509,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__item row align-items-center position-relative">
+                <div class="feature__item row align-items-center position-relative" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 warning--label fw-bold">Under Construction</div>
                         <h3 class="text-h3 fw-bold text-color-primary">Easy Use Geolocation DB & API...</h3>
@@ -500,7 +525,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature__item row align-items-center">
+                <div class="feature__item row align-items-center" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center">
                     <div class="feature__item__text col-12 col-lg-6">
                         <div class="text-body-2 warning--label fw-bold">Under Construction</div>
                         <h3 class="text-h3 fw-bold text-color-primary">Add Trustpilot Reviews to your website...</h3>
@@ -519,11 +545,13 @@
                 <div class="responsive--arrow">
                     <svg width="301" height="162" viewBox="0 0 301 162" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M26.9336 130.691L15.1949 149.387L34.635 158.996" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
+                            stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="500"
+                            data-aos-anchor-placement="top-top" data-aos-offset="3500" />
                         <path
                             d="M277.852 1.91972C320.827 52.782 217.962 68.7751 157.945 70.6512C109.375 72.1694 120.007 32.3188 163.595 52.4388C235.974 85.849 87.2948 140.287 15.9084 149.028"
                             stroke="url(#paint0_linear_895_4922)" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                            stroke-linejoin="round" data-aos="dash" data-aos-duration="1000"
+                            data-aos-anchor-placement="top-top" data-aos-offset="3500" />
                         <defs>
                             <linearGradient id="paint0_linear_895_4922" x1="53.7628" y1="285.563" x2="134.321"
                                 y2="-39.8855" gradientUnits="userSpaceOnUse">
@@ -551,11 +579,13 @@
             </div>
             <div class="row tools">
                 <img src="./assets/images/dots/dot_tools_of_the_titans.svg" alt="tools" class="dot--images">
-                <div class="col-12 col-lg-5 tools__text">
+                <div class="col-12 col-lg-5 tools__text" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                    id="titan">
                     <h1 class="text-h1 fw-bold text-color-primary">
                         Tools of the <span class="main-color fw-extra-bold">Titans</span>
                     </h1>
-                    <p class="text-body-2 text-color-secondary mt-2 mt-sm-4">At <b>DEVZA</b>, we provide challenge and growth
+                    <p class="text-body-2 text-color-secondary mt-2 mt-sm-4">At <b>DEVZA</b>, we provide challenge and
+                        growth
                         opportunities
                         of a startup combinedwith the stability of an established corporation. All of this while being
                         completely <b>BOOTSTRAPPED.</b></p>
@@ -566,31 +596,41 @@
                 <div class="col-12 col-lg-7 tools__card">
                     <div class="row gy-5">
                         <div class="col-12 col-lg-4"></div>
-                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center"
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100"
+                            data-aos-anchor="#titan">
                             <img src="./assets/images/laptop-high-end.png" alt="laptop">
                             <h2 class="text-body-1 text-color-primary fw-bold">High End Laptop</h2>
                             <p class="text-body-2 text-color-secondary">Use laptop facilities with good specifications
                             </p>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center"
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200"
+                            data-aos-anchor="#titan">
                             <img src="./assets/images/unlimited-pto.png" alt="pto">
                             <h2 class="text-body-1 text-color-primary fw-bold">Unlimited PTO</h2>
                             <p class="text-body-2 text-color-secondary">Get paid leave by following the provisions
                             </p>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center"
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="300"
+                            data-aos-anchor="#titan">
                             <img src="./assets/images/health_insurance.png" alt="health">
                             <h2 class="text-body-1 text-color-primary fw-bold">Health Insurance</h2>
                             <p class="text-body-2 text-color-secondary">Get health benefits for each member
                             </p>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center"
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="400"
+                            data-aos-anchor="#titan">
                             <img src="./assets/images/youtube.png" alt="youtube">
                             <h2 class="text-body-1 text-color-primary fw-bold">Youtube Premium</h2>
                             <p class="text-body-2 text-color-secondary">Get youtube premium access to use
                             </p>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-lg-4 d-flex flex-column align-items-center text-center"
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="500"
+                            data-aos-anchor="#titan">
                             <img src="./assets/images/dashlane.png" alt="dashlane">
                             <h2 class="text-body-1 text-color-primary fw-bold">Dashlane Premium</h2>
                             <p class="text-body-2 text-color-secondary">Get dashlane premium access for job support</p>
@@ -600,11 +640,13 @@
             </div>
             <svg width="295" height="145" viewBox="0 0 295 145" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M274.2 114.513L287.097 132.429L268.303 143.248" stroke="#2F55D4" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" />
+                    stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-anchor-placement="top-top"
+                    data-aos-offset="4500" data-aos-delay="500" />
                 <path
                     d="M15.6425 1.86253C-24.031 55.34 79.6394 64.7978 139.655 62.8759C188.224 61.3204 175.093 22.2218 132.865 45.0571C62.7425 82.9764 214.566 127.906 286.363 132.116"
                     stroke="url(#paint0_linear_895_4895)" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
+                    stroke-linejoin="round" data-aos="dash" data-aos-anchor-placement="top-top" data-aos-offset="4500"
+                    data-aos-duration="1000" />
                 <defs>
                     <linearGradient id="paint0_linear_895_4895" x1="218.353" y1="270.917" x2="60.0729" y2="-21.2357"
                         gradientUnits="userSpaceOnUse">
@@ -617,7 +659,8 @@
                 <img src="./assets/images/dots/dot_fun_side_left.svg" alt="dot-images" class="dot--images">
                 <img src="./assets/images/dots/dot_fun_side_right.svg" alt="dot-images" class="dot--images">
                 <div class="row">
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-lg-8" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="500">
                         <img src="./assets/images/fun_side_things.png" alt="fun" onclick="openModal('vacation')"
                             class="fun-things--image">
                     </div>
@@ -626,9 +669,12 @@
                     <svg width="593" height="572" viewBox="0 0 593 572" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M188.92 45.2426C188.92 45.2426 339.648 50.1927 335.823 155.016C332.106 256.897 371.318 377.422 534.677 318.882C633.763 283.375 457.691 168.387 472.686 281.978C510.923 571.622 64.9775 558.112 64.9775 558.112"
-                            stroke="url(#paint0_linear_895_4919)" stroke-width="2" stroke-linecap="round" />
+                            stroke="url(#paint0_linear_895_4919)" stroke-width="2" stroke-linecap="round"
+                            data-aos="dash-long" data-aos-anchor-placement="top-top" data-aos-offset="4500"
+                            data-aos-duration="1000" />
                         <path d="M76.9303 541.05L63.0346 558.204L81.1823 570.074" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
+                            stroke-linecap="round" stroke-linejoin="round" data-aos="fade"
+                            data-aos-anchor-placement="top-top" data-aos-offset="4500" data-aos-delay="500" />
                         <defs>
                             <linearGradient id="paint0_linear_895_4919" x1="225.916" y1="752.525" x2="370.719"
                                 y2="47.4739" gradientUnits="userSpaceOnUse">
@@ -653,9 +699,9 @@
                     </svg>
                 </div>
             </div>
-            <div class="work-culture">
+            <div class="work-culture" id="work-culture">
                 <div class="row align-items-center">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-anchor="#work-culture">
                         <h1 class="text-h1 fw-bold text-color-primary">
                             Hybrid Work <span class="main-color fw-extra-bold">Culture</span>
                         </h1>
@@ -666,58 +712,70 @@
                         </p>
                     </div>
                     <div class="col-12 col-lg-6 row d-none-mobile">
-                        <div class="d-flex justify-content-end align-items-end">
+                        <div class="d-flex justify-content-end align-items-end" data-aos="fade-left"
+                            data-aos-anchor="#work-culture" data-aos-delay="100">
                             <button class="button-main-small">Explore Roles</button>
                         </div>
                     </div>
                 </div>
-                <div class="images-grid">
-                    <figure class="images-grid__item">
+                <div class="images-grid" id="images-grid">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_1.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="100" data-aos-anchor="#images-grid">
                         <img src="./assets/images/Image_1_2.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="200" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_2.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="300" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_3.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="400" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_4.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="500" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_5.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="600" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_6.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="700" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_7.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
-                    <figure class="images-grid__item">
+                    <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-delay="800" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_8.png" alt="images_1" class="images-grid__img"
                             onclick="openImage(this.src)">
                     </figure>
                 </div>
             </div>
-            <div class="responsive--arrow">
+            <div class="responsive--arrow" id="line-founding">
                 <svg width="293" height="139" viewBox="0 0 293 139" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M274.174 108.739L287.412 126.405L268.829 137.582" stroke="#2F55D4" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                        stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-delay="500"
+                        data-aos-anchor="#line-founding" />
                     <path
                         d="M13.5052 1.06459C-25.1362 55.2925 78.6964 62.762 138.664 59.6903C187.195 57.2044 173.317 18.3646 131.534 42.0049C62.1509 81.261 214.808 123.273 286.672 126.107"
                         stroke="url(#paint0_linear_1192_4133)" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                        stroke-linejoin="round" data-aos="dash" data-aos-duration="1000"
+                        data-aos-anchor="#line-founding" />
                     <defs>
                         <linearGradient id="paint0_linear_1192_4133" x1="221.335" y1="266.185" x2="57.4848"
                             y2="-22.8808" gradientUnits="userSpaceOnUse">
@@ -743,11 +801,12 @@
             </div>
             <div class="founding">
                 <img src="./assets/images/dots/dot_our_founding.svg" alt="dot-images" class="dot--images">
-                <h1 class="text-h1 fw-bold text-color-primary text-center">
+                <h1 class="text-h1 fw-bold text-color-primary text-center" data-aos-anchor="#line-founding"
+                    data-aos="fade-up" data-aos-delay="500">
                     Our Founding <span class="main-color fw-extra-bold">Team</span>
                 </h1>
                 <div class="row align-items-center founding__card-group">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-anchor-placement="top-center">
                         <div class="founding--card">
                             <img src="./assets/images/founder_1.png" alt="founder">
                             <div class="founding--card__details">
@@ -762,7 +821,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 founding--details pl-100">
+                    <div class="col-12 col-lg-8 founding--details pl-100" data-aos="fade-left"
+                        data-aos-anchor-placement="top-center">
                         <div class="founding--details__card">
                             <h1 class="text-h3 fw-bold text-color-primary">Ac dignissim donec velit diam vestibulum.
                             </h1>
@@ -775,7 +835,8 @@
                     </div>
                 </div>
                 <div class="row align-items-center founding__card-group">
-                    <div class="col-12 col-lg-8 founding--details pr-100">
+                    <div class="col-12 col-lg-8 founding--details pr-100" data-aos="fade-right"
+                        data-aos-anchor-placement="top-center">
                         <div class="founding--details__card">
                             <h1 class="text-h3 fw-bold text-color-primary">Ac dignissim donec velit diam vestibulum.
                             </h1>
@@ -786,7 +847,7 @@
                                 arcu nulla. Nec eget vel erat at egestas orci. Eu.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-anchor-placement="top-center">
                         <div class="founding--card">
                             <img src="./assets/images/founder_2.png" alt="founder">
                             <div class="founding--card__details">
@@ -802,17 +863,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="row our-experience position-relative">
+                <div class="row our-experience position-relative" id="our-experience">
                     <img src="./assets/images/dots/dot_want_to_know.svg" alt="our-experience" class="dot--images">
                     <div class="col-12 col-lg-6">
                         <div class="responsive--arrow justify-end-mobile">
                             <svg width="557" height="334" viewBox="0 0 557 334" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M504.232 214.358L526.093 217.431L520.913 238.488" stroke="#2F55D4"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-aos="fade"
+                                    data-aos-delay="500" data-aos-anchor="#our-experience" />
                                 <path
                                     d="M41.2783 1.76157C41.2783 1.76157 14.8771 45.7196 139.702 155.536C249.158 251.832 129.348 311.186 98.4011 246.799C67.4541 182.411 225.212 128.786 323.093 237.051C403.881 326.408 524.964 218.032 524.964 218.032"
-                                    stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round" />
+                                    stroke="url(#paint0_linear_895:4913)" stroke-width="2" stroke-linecap="round"
+                                    data-aos="dash" data-aos-duration="1000" data-aos-anchor="#our-experience" />
                                 <defs>
                                     <linearGradient id="paint0_linear_895:4913" x1="448.583" y1="544.863" x2="160.948"
                                         y2="-81.5375" gradientUnits="userSpaceOnUse">
@@ -840,21 +903,25 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 about--end">
-                        <h1 class="text-h1 fw-bold text-color-primary">
+                        <h1 class="text-h1 fw-bold text-color-primary" data-aos="fade-up"
+                            data-aos-anchor="#our-experience" data-aos-delay="500">
                             Want to Know <span class="main-color fw-extra-bold">Our Experience ?</span>
                         </h1>
-                        <p class="text-body-2 text-color-secondary mt-4">
+                        <p class="text-body-2 text-color-secondary mt-4" data-aos="fade-up"
+                            data-aos-anchor="#our-experience" data-aos-delay="600">
                             With a strong financial background couple with the years of experience we have accumulated,
                             we strive to provide the ultimate stage for exponential growth to all our employees.
                         </p>
                     </div>
                 </div>
-                <div class="row current-openings position-relative">
+                <div class="row current-openings position-relative" id="current-openings">
                     <img src="./assets/images/dots/dot_current_openings.svg" alt="dot_current" class="dot--images">
                     <div class="col-12 col-lg-6 about--end">
-                        <h1 class="text-h1 fw-bold text-color-primary">
+                        <h1 class="text-h1 fw-bold text-color-primary" data-aos="fade-up"
+                            data-aos-anchor="current-openings" data-aos-delay="600">
                             Current <span class="main-color fw-extra-bold">Openings</span> </h1>
-                        <p class="text-body-2 text-color-secondary mt-4">
+                        <p class="text-body-2 text-color-secondary mt-4" data-aos="fade-up"
+                            data-aos-anchor="current-openings" data-aos-delay="700">
                             Start finding your purpose with <span class="fw-bold"></span>. See our latest vacancies
                             below.
                         </p>
@@ -864,10 +931,12 @@
                             <svg width="466" height="310" viewBox="0 0 466 310" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M54.3208 273.162L32.894 278.475L40.221 298.885" stroke="#2F55D4"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-aos="fade"
+                                    data-aos-anchor="#current-openings" data-aos-delay="500" />
                                 <path
                                     d="M435.715 1.37969C461.672 73.1048 372.227 107.615 336.957 136.164C292.869 171.85 319.093 231.485 383.191 199.777C447.29 168.069 297.316 82.9321 258.971 184.376C220.625 285.82 127.572 330.049 34.9531 279.74"
-                                    stroke="url(#paint0_linear_1192_3992)" stroke-width="2" stroke-linecap="round" />
+                                    stroke="url(#paint0_linear_1192_3992)" stroke-width="2" stroke-linecap="round"
+                                    data-aos="dash" data-aos-anchor="#current-openings" data-aos-duration="1000" />
                                 <defs>
                                     <linearGradient id="paint0_linear_1192_3992" x1="356.445" y1="747.367" x2="573.84"
                                         y2="64.1088" gradientUnits="userSpaceOnUse">
@@ -895,7 +964,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-table">
+                <div class="main-table" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" id="main-table">
                     <div class="main-table__filter d-flex">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Product Tech</option>
@@ -1044,14 +1113,16 @@
                         </button>
                     </div>
                 </div>
-                <div class="responsive--arrow justify-end-mobile">
+                <div class="responsive--arrow justify-end-mobile" id="line-global">
                     <svg width="236" height="167" viewBox="0 0 236 167" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M221.686 136.383L234.933 154.042L216.355 165.229" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
+                            stroke-linecap="round" stroke-linejoin="round" data-aos="fade"
+                            data-aos-anchor="#line-global" data-aos-delay="500" />
                         <path
                             d="M13.8878 1.37646C-22.5868 57.0849 23.9393 98.6332 83.7393 93.2008C132.134 88.8045 116.737 50.5417 75.9177 75.8102C8.13563 117.77 162.329 153.733 234.249 153.733"
                             stroke="url(#paint0_linear_895_4901)" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                            stroke-linejoin="round" data-aos="dash" data-aos-anchor="#line-global"
+                            data-aos-duration="1000" />
                         <defs>
                             <linearGradient id="paint0_linear_895_4901" x1="162.301" y1="276.928" x2="139.295"
                                 y2="-23.0069" gradientUnits="userSpaceOnUse">
@@ -1079,14 +1150,16 @@
                 <div class="our-team position-relative">
                     <img src="./assets/images/dots/dot_our_team.svg" alt="dot_our_team" class="dot--images">
                     <h1 class="text-h1 fw-bold text-color-primary text-center">
-                        <h1 class="text-h1 fw-bold text-color-primary text-center">
+                        <h1 class="text-h1 fw-bold text-color-primary text-center" data-aos="fade-up"
+                            data-aos-anchor="#line-global" data-aos-delay="600">
                             Our Team is <span class="main-color fw-extra-bold">Situated Globally</span>
                         </h1>
                         <div class="our-team__devza">
-                            <img src="./assets/images/devza_text.svg" alt="devza">
+                            <img src="./assets/images/devza_text.svg" alt="devza" data-aos="fade-up"
+                                data-aos-anchor="#line-global" data-aos-delay="700">
                         </div>
                     </h1>
-                    <div class="wrapper-map">
+                    <div class="wrapper-map" data-aos="fade-down" data-aos-anchor-placement="top-center">
                         <div class="wrapper-map__switch" id="switch-map">
                             <input id="dark-v10" type="radio" name="rtoggle" value="dark" checked="checked">
                             <label for="dark-v10">Dark</label>
@@ -1098,7 +1171,7 @@
                     <div class="our-team__nationality position-relative">
                         <img src="./assets/images/dots/dot_map.svg" alt="map" class="dot--images">
                         <div class="row">
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-3" data-aos="fade-down">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_us.svg" alt="us">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #41479B;">UNITED STATES</h3>
@@ -1192,7 +1265,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-3" data-aos="fade-down" data-aos-delay="100">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_cyprus.svg" alt="cyprus">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #FF4B55;">CYPRUS</h3>
@@ -1232,7 +1305,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-3" data-aos="fade-down" data-aos-delay="200">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_india.svg" alt="india">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #73AF00;">INDIA</h3>
@@ -1344,7 +1417,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-3" data-aos="fade-down" data-aos-delay="400">
                                 <div class="our-team__nationality__flag d-flex align-items-center">
                                     <img src="./assets/images/flag_bangladesh.svg" alt="bangladesh">
                                     <h3 class="text-body-1 fw-bold mb-0 pb-0" style="color: #496E2D;">BANGLADESH</h3>
@@ -1363,13 +1436,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end responsive--arrow">
+                <div class="d-flex justify-content-end responsive--arrow" id="line-blog">
                     <svg width="465" height="311" viewBox="0 0 465 311" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M54.1172 273.406L32.6904 278.72L40.0174 299.129" stroke="#2F55D4" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
+                            stroke-linecap="round" stroke-linejoin="round" data-aos="fade" data-aos-anchor="#line-blog"
+                            data-aos-delay="500" />
                         <path
                             d="M435.512 1.62383C461.469 73.349 372.024 107.859 336.754 136.408C292.666 172.095 318.89 231.729 382.988 200.021C447.086 168.313 297.113 83.1762 258.767 184.62C220.422 286.064 127.369 330.293 34.7499 279.984"
-                            stroke="url(#paint0_linear_895_4892)" stroke-width="2" stroke-linecap="round" />
+                            stroke="url(#paint0_linear_895_4892)" stroke-width="2" stroke-linecap="round"
+                            data-aos="dash" data-aos-anchor="#line-blog" data-aos-duration="1000" />
                         <defs>
                             <linearGradient id="paint0_linear_895_4892" x1="356.242" y1="747.611" x2="573.637"
                                 y2="64.3529" gradientUnits="userSpaceOnUse">
@@ -1398,20 +1473,23 @@
                 <div class="blog">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <h1 class="text-h1 fw-bold text-color-primary">
+                            <h1 class="text-h1 fw-bold text-color-primary" data-aos-anchor="#line-blog"
+                                data-aos="fade-up" data-aos-delay="600">
                                 Our Latest <span class="main-color fw-extra-bold">Blog</span>
                             </h1>
-                            <p class="text-color-secondary text-body-2">We like to document the things we ask for and
+                            <p class="text-color-secondary text-body-2" data-aos-anchor="#line-blog" data-aos="fade-up"
+                                data-aos-delay="700">We like to document the things we ask for and
                                 what we are doing, you can read about it on the
                                 blog we have created.</p>
                         </div>
                         <div class="col-12 col-lg-6 d-none-mobile">
-                            <div class="d-flex justify-content-end">
+                            <div class="d-flex justify-content-end" data-aos-anchor="#line-blog" data-aos="fade-up"
+                            data-aos-delay="800">
                                 <button class="button-main-small">View All</button>
                             </div>
                         </div>
                     </div>
-                    <div class="blog__post owl-theme owl-carousel">
+                    <div class="blog__post owl-theme owl-carousel" data-aos="fade-down">
                         <div class="blog__post__item">
                             <img src="./assets/images/post/post_1.png" alt="post">
                             <h2 class="text-body-2 fw-bold text-color-primary">SaaS, PaaS, IaaS: Key Differences Between
@@ -1518,6 +1596,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 </script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./assets/js/script.js"></script>
 
 </html>
