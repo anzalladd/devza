@@ -159,7 +159,7 @@ $(document).ready(function() {
 function openModal(nameFile){
     $('body').addClass('stop-scrolling')
     $('body').bind('touchmove', function(e){e.preventDefault()})
-    $('.main-modal').addClass('active')
+    $('#video-modal').addClass('active')
     const video = document.getElementsByTagName('video')[0];
     var sources = video.getElementsByTagName('source');
     sources[0].src = `./assets/video/${nameFile}.mp4`;
@@ -175,6 +175,21 @@ function closeModal(){
     $('body').unbind('touchmove')
 }
 
-function openImage(src){
-    window.open(src, "_blank",)
+function openImage(index){
+    $('body').addClass('stop-scrolling')
+    $('body').bind('touchmove', function(e){e.preventDefault()})
+    $('#image-modal').addClass('active')
+    const owl = $('.carousel-gallery')
+    $('.carousel-gallery').owlCarousel({
+        items: 1,
+        margin: 15,
+        dots: false
+    })
+    $('#prev-modal-image').click(function () {
+        owl.trigger('prev.owl.carousel')
+    })
+    $('#next-modal-image').click(function () {
+        owl.trigger('next.owl.carousel')
+    })
+    $(".carousel-gallery").trigger("to.owl.carousel", [index, 1, true]);
 }

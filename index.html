@@ -24,13 +24,42 @@
         <img src="./assets/images/Expand_up.svg" alt="up">
         <p class="text-body-3 fw-bold text-color-white">TOP</p>
     </div>
-    <div class="main-modal">
+    <div class="main-modal" id="video-modal">
         <div class="d-flex align-items-start">
             <video controls poster="./assets/video/poster_video.svg">
                 <source type="video/mp4">
                 </source>
             </video>
             <button onclick="closeModal()"><img src="./assets/images/Close_round.svg" alt="X"></button>
+        </div>
+    </div>
+    <div class="main-modal" id="image-modal">
+        <button onclick="closeModal()"><img src="./assets/images/Close_round.svg" alt="X"></button>
+        <div class="arrow-modal-image">
+            <div class="prev-carousel--btn" id="prev-modal-image">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.70662 1.70711C9.09714 1.31658 9.09714 0.683417 8.70662 0.292893C8.31609 -0.0976311 7.68293 -0.0976311 7.29241 0.292893L8.70662 1.70711ZM1.99951 7L1.2924 6.29289L0.585298 7L1.2924 7.70711L1.99951 7ZM7.29241 13.7071C7.68293 14.0976 8.31609 14.0976 8.70662 13.7071C9.09714 13.3166 9.09714 12.6834 8.70662 12.2929L7.29241 13.7071ZM7.29241 0.292893L1.2924 6.29289L2.70662 7.70711L8.70662 1.70711L7.29241 0.292893ZM1.2924 7.70711L7.29241 13.7071L8.70662 12.2929L2.70662 6.29289L1.2924 7.70711Z"
+                        fill="#2F55D4" />
+                </svg>
+            </div>
+            <div class="next-carousel--btn" id="next-modal-image">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path   
+                        d="M0.292405 1.70711C-0.0981193 1.31658 -0.0981193 0.683417 0.292405 0.292893C0.682929 -0.0976311 1.31609 -0.0976311 1.70662 0.292893L0.292405 1.70711ZM6.99951 7L7.70662 6.29289L8.41373 7L7.70662 7.70711L6.99951 7ZM1.70662 13.7071C1.31609 14.0976 0.682929 14.0976 0.292405 13.7071C-0.0981193 13.3166 -0.0981193 12.6834 0.292405 12.2929L1.70662 13.7071ZM1.70662 0.292893L7.70662 6.29289L6.2924 7.70711L0.292405 1.70711L1.70662 0.292893ZM7.70662 7.70711L1.70662 13.7071L0.292405 12.2929L6.2924 6.29289L7.70662 7.70711Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="carousel-gallery owl-theme owl-carousel">
+            <img src="./assets/images/image_gallery_list/image 1.png" alt="image_1">
+            <img src="./assets/images/image_gallery_list/image 2.png" alt="image_1">
+            <img src="./assets/images/image_gallery_list/image 3.png" alt="image_1">
+            <img src="./assets/images/image_gallery_list/image 4.png" alt="image_1">
+            <img src="./assets/images/image_gallery_list/image 5.png" alt="image_1">
+            <img src="./assets/images/image_gallery_list/image 6.png" alt="image_1">
+            <img src="./assets/images/image_gallery_list/image 7.png" alt="image_1">
+            <img src="./assets/images/image_gallery_list/image 8.png" alt="image_1">
         </div>
     </div>
     <div class="wrapper-nav">
@@ -722,47 +751,47 @@
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_1.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(0)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="100" data-aos-anchor="#images-grid">
                         <img src="./assets/images/Image_1_2.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(0)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="200" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_2.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(1)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="300" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_3.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(2)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="400" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_4.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(3)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="500" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_5.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(4)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="600" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_6.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(5)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="700" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_7.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(6)">
                     </figure>
                     <figure class="images-grid__item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-delay="800" data-aos-anchor="#images-grid">
                         <img src="./assets/images/image_8.png" alt="images_1" class="images-grid__img"
-                            onclick="openImage(this.src)">
+                            onclick="openImage(7)">
                     </figure>
                 </div>
             </div>
@@ -834,7 +863,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center founding__card-group">
+                <div class="row align-items-center founding__card-group founding__card-group-reverse">
                     <div class="col-12 col-lg-8 founding--details pr-100" data-aos="fade-right"
                         data-aos-anchor-placement="top-center">
                         <div class="founding--details__card">
@@ -1484,7 +1513,7 @@
                         </div>
                         <div class="col-12 col-lg-6 d-none-mobile">
                             <div class="d-flex justify-content-end" data-aos-anchor="#line-blog" data-aos="fade-up"
-                            data-aos-delay="800">
+                                data-aos-delay="800">
                                 <button class="button-main-small">View All</button>
                             </div>
                         </div>

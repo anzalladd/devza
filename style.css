@@ -171,6 +171,41 @@ figure {
     transition: all .3s;
 }
 
+.arrow-modal-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    padding: 0 260px;
+    z-index: 999;
+}
+
+.arrow-modal-image div {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999999px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.arrow-modal-image div svg path {
+    fill: var(--main-color);
+}
+
+.arrow-modal-image div:hover {
+    background-color: var(--main-color);
+}
+
+.arrow-modal-image div:hover svg path {
+    fill: white;
+}
+
 .button-main-small:hover {
     -webkit-box-shadow: 0px 10px 28px rgba(47, 85, 212, 0.22);
     box-shadow: 0px 10px 28px rgba(47, 85, 212, 0.22);
@@ -234,6 +269,8 @@ figure {
     z-index: 999999999;
     padding-left: 245px;
     padding-right: 245px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -268,6 +305,24 @@ figure {
     width: 100%;
     height: auto;
     position: relative;
+}
+
+#image-modal button {
+    position: absolute !important;
+    left: unset !important;
+    right: 30px !important;
+    top: 30px !important;
+}
+
+.carousel-gallery .owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-gallery img {
+    max-height: 100vh;
+    padding: 40px 0;
 }
 
 .main-modal button {
@@ -981,6 +1036,7 @@ figure {
     transition: all .3s;
     overflow: hidden;
     background-color: white;
+    height: 485px;
 }
 
 .founding--card img {
@@ -1960,8 +2016,14 @@ a.mapboxgl-ctrl-logo {
         margin-top: 30px;
     }
 
-    .founding--details__card {
-        display: none;
+    .founding--details {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-top: 60px;
+    }
+
+    .founding__card-group-reverse{
+        flex-direction: column-reverse;
     }
 
     .current-openings {
