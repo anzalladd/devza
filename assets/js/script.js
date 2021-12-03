@@ -176,6 +176,7 @@ function closeModal(){
 }
 
 function openImage(index){
+    $(".carousel-gallery").trigger("to.owl.carousel", [index, 1, true]);
     $('body').addClass('stop-scrolling')
     $('body').bind('touchmove', function(e){e.preventDefault()})
     $('#image-modal').addClass('active')
@@ -191,5 +192,4 @@ function openImage(index){
     $('#next-modal-image').click(function () {
         owl.trigger('next.owl.carousel')
     })
-    $(".carousel-gallery").trigger("to.owl.carousel", [index, 1, true]);
 }
