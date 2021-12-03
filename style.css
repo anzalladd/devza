@@ -1774,6 +1774,10 @@ a.mapboxgl-ctrl-logo {
         padding-left: 100px;
         padding-right: 100px;
     }
+    .arrow-modal-image {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
 }
 
 @media (max-width:992px) {
@@ -1789,6 +1793,11 @@ a.mapboxgl-ctrl-logo {
     .main-modal {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .arrow-modal-image {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .wrapper-nav {
