@@ -52,6 +52,7 @@ $(document).ready(function () {
         }),
         "bottom-right"
     );
+    map.scrollZoom.disable();
 
     const elSwitchMap = document.getElementById("switch-map");
     const elInputFromMenu = elSwitchMap.getElementsByTagName("input");
